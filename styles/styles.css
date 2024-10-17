@@ -116,6 +116,7 @@ nav ul li a:hover {
  
 footer {
     text-align: center;
+    font-size: 16px;
     padding: 20px;
     background-color: #fff;
     color: #333;
@@ -123,3 +124,9 @@ footer {
     bottom: 0;
     flex-shrink: 0;
 }
+
+.small-caps {
+    font-variant: small-caps;
+    font-size: large;
+}
+
