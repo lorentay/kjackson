@@ -1,19 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
 }
 
 h1 {
     margin: 0;
+    font-variant: small-caps;
 }
 
 nav ul {
@@ -27,7 +45,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
 }
@@ -38,28 +56,62 @@ nav ul li a:hover {
 
 .mosaic {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); Creates dynamic columns */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: 10px; /* Tiny row height for better control of grid spans */
     gap: 10px;
-    padding: 10px;
+    grid-auto-flow: dense; /* Fills gaps more efficiently */
 }
 
-.mosaic-item {
+.item {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.mosaic-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    position: relative;
     transition: transform 0.3s;
 }
 
-.mosaic-item img:hover {
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Default behavior for all images */
+}
+
+.item.horizontal img {
+    object-fit: contain; /* Contain horizontal images to prevent cropping */
+    background-color: #f4f4f4; /* Optional background color for horizontal images */
+}
+
+.item img:hover {
     transform: scale(1.05);
 }
 
+/* Adjust grid-row span based on image aspect ratio */
+.mosaic-item1 { grid-row: span 12; }
+.mosaic-item2 { grid-row: span 12; }
+.mosaic-item3 { grid-row: span 18; } /* Taller for vertical images */
+.mosaic-item4 { grid-row: span 12; }
+.mosaic-item5 { grid-row: span 18; }
+.mosaic-item6 { grid-row: span 18; }
+.mosaic-item7 { grid-row: span 12; }
+.mosaic-item8 { grid-row: span 12; } /* amber's wedding ring */
+.mosaic-item9 { grid-row: span 18; }
+.mosaic-item10 { grid-row: span 18; }
+.mosaic-item11 { grid-row: span 12; }
+.mosaic-item12 { grid-row: span 12; }
+.mosaic-item13 { grid-row: span 12; }
+.mosaic-item14 { grid-row: span 12; }
+.mosaic-item15 { grid-row: span 18; }
+.mosaic-item16 { grid-row: span 18; }
+.mosaic-item17 { grid-row: span 18; }
+.mosaic-item18 { grid-row: span 18; }
+.mosaic-item19 { grid-row: span 18; }
+.mosaic-item20 { grid-row: span 18; }
+.mosaic-item21 { grid-row: span 12; }
+.mosaic-item22 { grid-row: span 12; }
+.mosaic-item23 { grid-row: span 18; }
+.mosaic-item24 { grid-row: span 12; } /* New item */
+ 
 footer {
     text-align: center;
     padding: 20px;
@@ -67,17 +119,5 @@ footer {
     color: #fff;
     position: relative;
     bottom: 0;
-    width: 100%;
-}
-
-main {
-    padding: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-p {
-    color: #555;
+    flex-shrink: 0;
 }
