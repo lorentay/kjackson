@@ -27,11 +27,14 @@ header {
     padding: 20px;
     background-color: #fff;
     color: #333;
+    line-height: 2;
 }
 
 h1 {
     margin: 0;
     font-variant: small-caps;
+    font-variant: monospace;
+    font-weight: 300;
 }
 
 nav ul {
@@ -47,7 +50,7 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 nav ul li a:hover {
@@ -108,14 +111,14 @@ nav ul li a:hover {
 .mosaic-item20 { grid-row: span 18; }
 .mosaic-item21 { grid-row: span 12; }
 .mosaic-item22 { grid-row: span 12; }
-.mosaic-item23 { grid-row: span 18; }
+.mosaic-item23 { grid-row: span 12; }
 .mosaic-item24 { grid-row: span 12; } /* New item */
  
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     position: relative;
     bottom: 0;
     flex-shrink: 0;
