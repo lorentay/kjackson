@@ -112,9 +112,16 @@ nav ul li a:hover {
 .mosaic-item20 { grid-row: span 18; }
 .mosaic-item21 { grid-row: span 12; }
 .mosaic-item22 { grid-row: span 12; }
-.mosaic-item23 { grid-row: span 12; }
+.mosaic-item23 { grid-row: span 18; }
 .mosaic-item24 { grid-row: span 12; } /* New item */
- 
+.mosaic-item25 { grid-row: span 19; } /* New item */
+.mosaic-item26 { grid-row: span 18; } /* New item */
+.mosaic-item27 { grid-row: span 20; } /* New item */
+.mosaic-item28 { grid-row: span 19; } /* New item */
+.mosaic-item29 { grid-row: span 20; } /* New item */
+.mosaic-item30 { grid-row: span 18; } /* New item */
+
+
 footer {
     text-align: center;
     font-size: 16px;
