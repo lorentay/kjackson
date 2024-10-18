@@ -91,12 +91,12 @@ nav ul li a:hover {
 
 /* Adjust grid-row span based on image aspect ratio */
 .mosaic-item1 { grid-row: span 12; }
-.mosaic-item2 { grid-row: span 12; }
+.mosaic-item2 { grid-row: span 15; }
 .mosaic-item3 { grid-row: span 18; } /* Taller for vertical images */
 .mosaic-item4 { grid-row: span 12; }
 .mosaic-item5 { grid-row: span 18; }
 .mosaic-item6 { grid-row: span 18; }
-.mosaic-item7 { grid-row: span 12; }
+.mosaic-item7 { grid-row: span 20; }
 .mosaic-item8 { grid-row: span 12; } /* amber's wedding ring */
 .mosaic-item9 { grid-row: span 18; }
 .mosaic-item10 { grid-row: span 18; }
