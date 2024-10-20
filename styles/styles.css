@@ -32,17 +32,15 @@ header {
 }
 
 h1 {
-  font-family: "Antic Slab", serif;
+  font-family: "Alegreya Sans", sans-serif;
   margin: 0;
-  /* font-variant: small-caps; */
-  font-weight: 300;
+  font-weight: 400;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-  /* font-variant: small-caps; */
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Antic Slab", serif;
 }
 
 nav ul li {
@@ -53,7 +51,6 @@ nav ul li {
 nav ul li a {
   color: #333;
   text-decoration: none;
-  /* font-weight: bold; */
 }
 
 nav ul li a:hover {
@@ -63,9 +60,9 @@ nav ul li a:hover {
 .mosaic {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-auto-rows: 10px; /* Tiny row height for better control of grid spans */
+  grid-auto-rows: 10px; /* Small base row height for better control */
   gap: 10px;
-  grid-auto-flow: dense; /* Fills gaps more efficiently */
+  grid-auto-flow: dense; /* Efficiently fills gaps */
 }
 
 .item {
@@ -79,113 +76,27 @@ nav ul li a:hover {
 .item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Default behavior for all images */
+  object-fit: contain; /* default behavior to avoid cropping */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.item.horizontal img {
-  object-fit: contain; /* Contain horizontal images to prevent cropping */
-  background-color: #f4f4f4; /* Optional background color for horizontal images */
+.item.horizontal {
+  grid-row: span 12; /* Use a consistent span for all horizontal images */
+}
+
+.item.vertical {
+  grid-row: span 18; /* Use a consistent span for all vertical images */
 }
 
 .item img:hover {
-  transform: scale(1.05);
-}
-
-/* Adjust grid-row span based on image aspect ratio */
-.mosaic-item1 {
-  grid-row: span 12;
-}
-.mosaic-item2 {
-  grid-row: span 15;
-}
-.mosaic-item3 {
-  grid-row: span 18;
-}
-.mosaic-item4 {
-  grid-row: span 12;
-}
-.mosaic-item5 {
-  grid-row: span 20;
-}
-.mosaic-item6 {
-  grid-row: span 20;
-}
-.mosaic-item7 {
-  grid-row: span 20;
-}
-.mosaic-item8 {
-  grid-row: span 12;
-}
-.mosaic-item9 {
-  grid-row: span 20;
-}
-.mosaic-item10 {
-  grid-row: span 18;
-}
-.mosaic-item11 {
-  grid-row: span 12;
-}
-.mosaic-item12 {
-  grid-row: span 12;
-}
-.mosaic-item13 {
-  grid-row: span 12;
-}
-.mosaic-item14 {
-  grid-row: span 12;
-}
-.mosaic-item15 {
-  grid-row: span 18;
-}
-.mosaic-item16 {
-  grid-row: span 18;
-}
-.mosaic-item17 {
-  grid-row: span 18;
-}
-.mosaic-item18 {
-  grid-row: span 18;
-}
-.mosaic-item19 {
-  grid-row: span 18;
-}
-.mosaic-item20 {
-  grid-row: span 20;
-}
-.mosaic-item21 {
-  grid-row: span 12;
-}
-.mosaic-item22 {
-  grid-row: span 12;
-}
-.mosaic-item23 {
-  grid-row: span 18;
-}
-.mosaic-item24 {
-  grid-row: span 14;
-}
-.mosaic-item25 {
-  grid-row: span 19;
-}
-.mosaic-item26 {
-  grid-row: span 18;
-}
-.mosaic-item27 {
-  grid-row: span 20;
-}
-.mosaic-item28 {
-  grid-row: span 19;
-}
-.mosaic-item29 {
-  grid-row: span 20;
-}
-.mosaic-item30 {
-  grid-row: span 18;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 footer {
   text-align: center;
   font-size: 16px;
+  font-family: "Alegreya Sans", sans-serif;
   padding: 20px;
   background-color: #fff;
   color: #333;
@@ -194,7 +105,48 @@ footer {
   flex-shrink: 0;
 }
 
-.small-caps {
-  font-variant: small-caps;
-  font-size: large;
+/* Styles for the About page */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 0;
 }
+
+.about-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-item.reverse {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+}
+
+.about-img {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  max-height: 350px;
+}
+
+.text-blur {
+  position: relative;
+  padding: 20px;
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+}
+
+.left-blur {
+  text-align: left;
+}
+
+.right-blur {
+  text-align: right;
+  direction: ltr;
+}
+
