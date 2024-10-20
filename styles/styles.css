@@ -76,7 +76,7 @@ nav ul li a:hover {
 .item img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* default behavior to avoid cropping */
+  object-fit: contain; /* Set a fallback behavior */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
