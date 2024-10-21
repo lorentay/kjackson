@@ -133,7 +133,7 @@ footer {
   max-height: 350px;
 }
 
-.text-blur {
+.text-box {
   position: relative;
   padding: 20px;
   font-size: 1.1em;
@@ -141,12 +141,51 @@ footer {
   border-radius: 8px;
 }
 
-.left-blur {
+.text-left {
   text-align: left;
 }
 
-.right-blur {
+.text-right {
   text-align: right;
-  direction: ltr;
 }
+
+.photo {
+  width: 100% !important; /* Ensure the photo takes up the full width of its container */
+  height: auto !important; /* Maintain the aspect ratio */
+  max-width: 500px !important; /* Set a maximum width so they don’t get too large on bigger screens */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .about-section {
+    gap: 30px; /* Adjust spacing */
+  }
+
+  .about-item {
+    grid-template-columns: 1fr; /* Stack text and image vertically */
+  }
+
+  .about-item.reverse {
+    direction: ltr; /* Reset direction for reverse items on mobile */
+    grid-template-columns: 1fr; /* Ensure the image stacks below the text */
+  }
+
+  .about-img {
+    width: 100%; /* Make the image take full width */
+    max-height: none; /* Remove height restriction for better flexibility */
+  }
+
+  .text-box {
+    padding: 10px;
+    font-size: 1em; /* Slightly reduce font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .photo {
+    max-width: 100%; /* Allow full width on smaller screens */
+  }
+}
+
 
