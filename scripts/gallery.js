@@ -4,6 +4,7 @@ const photos = [
     src: "images/amber-jeff-wedding2.jpg",
     alt: "Backview of the bride dancing with her husband looking at the camera over her shoulder",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/amber-jeff-wedding3.jpg",
@@ -14,6 +15,7 @@ const photos = [
     src: "images/amber-jeff-wedding-bands.jpg",
     alt: "Hands-only of the bride and groom overlaying the bride's dress",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/amber-jeff-wedding-flowers.jpg",
@@ -34,11 +36,13 @@ const photos = [
     src: "images/amber-jeff-wedding-hands.jpg",
     alt: "A close-up shot of the bride's and groom's hands",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/amber-jeff-wedding1.jpg",
     alt: "Backview of the bride dancing with her husband",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/annika-the-moviestar.jpg",
@@ -54,11 +58,13 @@ const photos = [
     src: "images/becca-weber-bride2.jpg",
     alt: "A black and white photo of a bride lounging on a chaise",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/becca-weber-bride3.jpg",
     alt: "A black and white portrait of a bride with dark hair, long curls, and tiara",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/cannon-beach-child-kite.jpg",
