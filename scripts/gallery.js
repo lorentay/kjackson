@@ -76,6 +76,7 @@ const photos = [
     src: "images/doug-arena-wedding-party.jpg",
     alt: "Wedding party portrait in a church",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/doug-arena-brides-ring.jpg",
