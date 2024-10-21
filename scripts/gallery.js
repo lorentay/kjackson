@@ -123,17 +123,15 @@ const photos = [
     src: "images/kirk-jamie-marriage-certificate.jpg",
     alt: "Hands of the bride and groom on the marriage certificate, in black and white",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/kirk-wedding-band.jpg",
     alt: "A close-up shot of a groom's hand on his hip, showing his wedding band",
     orientation: "horizontal",
+    fit: "contain",
   },
-  {
-    src: "images/amber-in-red3.jpeg",
-    alt: "A girl in red",
-    orientation: "vertical",
-  },
+  
   {
     src: "images/ladies-lunch.jpg",
     alt: "Four women around a table with trays of food and glasses of wine in hand",
@@ -143,6 +141,7 @@ const photos = [
     src: "images/draggin-the-ave.jpg",
     alt: "Black and white photo of young woman with straw hat and arm flexed showing tattoo of a bat and pumpkin",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/amber-falling-off-fence.jpeg",
@@ -162,14 +161,22 @@ const photos = [
   },
 
   {
+    src: "images/amber-in-red3.jpeg",
+    alt: "A girl in red",
+    orientation: "vertical",
+  },
+
+  {
     src: "images/amber-in-the-pool.jpeg",
     alt: "Woman with short hair in a pool leaning on edge looking into the camera",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/amber-in-the-pool2.jpeg",
     alt: "Woman emerging from a pool and throwing her back while water creates a halo around her head",
     orientation: "horizontal",
+    fit: "contain",
   },
   {
     src: "images/playful-by-the-pool.jpeg",
