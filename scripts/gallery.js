@@ -1,5 +1,4 @@
 const photos = [
-  
   {
     src: "images/amber-jeff-wedding2.jpg",
     alt: "Backview of the bride dancing with her husband looking at the camera over her shoulder",
@@ -93,18 +92,12 @@ const photos = [
     alt: "Headshot of a brunette woman under a white umbrella, blocking the sun",
     orientation: "vertical",
   },
-  
+
   {
     src: "images/jennys-7th-anniversary3.jpg",
     alt: "Headshot of a brunette woman under a white umbrella",
     orientation: "vertical",
   },
-  {
-    src: "images/julie-brunk.jpg",
-    alt: "A brunette woman dressed elegantly in black, posing with her back toward the camera and her head gazing to the ground",
-    orientation: "vertical",
-  },
-
   {
     src: "images/blonde-bride2.jpeg",
     alt: "A blonde bride",
@@ -121,28 +114,9 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/kirk-jamie-marriage-certificate.jpg",
-    alt: "Hands of the bride and groom on the marriage certificate, in black and white",
-    orientation: "horizontal",
-    fit: "contain",
-  },
-  {
-    src: "images/kirk-wedding-band.jpg",
-    alt: "A close-up shot of a groom's hand on his hip, showing his wedding band",
-    orientation: "horizontal",
-    fit: "contain",
-  },
-  
-  {
-    src: "images/ladies-lunch.jpg",
+    src: "images/tpb4u-party-wanda-standing.jpg",
     alt: "Four women around a table with trays of food and glasses of wine in hand",
     orientation: "vertical",
-  },
-  {
-    src: "images/draggin-the-ave.jpg",
-    alt: "Black and white photo of young woman with straw hat and arm flexed showing tattoo of a bat and pumpkin",
-    orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/amber-falling-off-fence.jpeg",
@@ -216,7 +190,7 @@ const photos = [
     alt: "A girl in red",
     orientation: "vertical",
   },
-  
+
   {
     src: "images/bride-in-thought.jpeg",
     alt: "",
@@ -235,11 +209,6 @@ const photos = [
   },
   {
     src: "images/bride-in-the-garden.jpeg",
-    alt: "",
-    orientation: "vertical",
-  },
-  {
-    src: "images/bride-on-stairs.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -291,7 +260,7 @@ const photos = [
   },
 
   {
-    src: "images/yellow-umbrella2.jpeg",
+    src: "images/amber-flying-yellow-umbrella.jpg",
     alt: "",
     orientation: "horizontal",
     fit: "contain",
@@ -310,7 +279,502 @@ const photos = [
     fit: "contain",
   },
 
+  // code for the new batch of files
 
+  { 
+    src: "images/amber-cherry-blossom.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  { 
+    src: "images/amber-corset-back.jpg", 
+    alt: "", 
+    orientation: "vertical", 
+  },
+  { 
+    src: "images/amber-corset-chair.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  {
+    src: "images/amber-corset-close-hand.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  { 
+    src: "images/amber-corset-close.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  { 
+    src: "images/amber-corset-oliver.jpg", 
+    alt: "", 
+    orientation: "vertical" },
+  {
+    src: "images/amber-corset-yellow-van.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/amber-flying-yellow-umbrella.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { 
+    src: "images/amber-hawaii-infinity-pool.jpg", 
+    alt: "", 
+    orientation: "" 
+  },
+  {
+    src: "images/amber-hippie-dry-grass-leaning.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/amber-hippie-dry-grass-sitting.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/amber-red-hair.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { 
+    src: "images/amber-snow-red-boa.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  { 
+    src: "images/amber-wheat.jpg", 
+    alt: "", 
+    orientation: "vertical" },
+  {
+    src: "images/amberjeff-back-dress-close.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/amberjeff-back-dress.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { 
+    src: "images/amberjeff-bouquet.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  {
+    src: "images/amberjeff-engaement-close.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/amberjeff-engagement-fence.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/amberjeff-engagement-train-station.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/amberjeff-engament-hands.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/amberjeff-hands.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/amberjeff-rings-close.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { 
+    src: "images/amberjeff-veil-closer.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  { 
+    src: "images/amberjeff-veil.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  {
+    src: "images/anna-ruth-veil-lights.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/anna-ruth-violin-red-couch.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { 
+    src: "images/annika-daisy.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  { 
+    src: "images/annika-sr-leaves.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  {
+    src: "images/becca-bridals-chaise.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/becca-bridals-close.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { 
+    src: "images/becca-bridals-twinkle.jpg", 
+    alt: "", 
+    orientation: "vertical" 
+  },
+  {
+    src: "images/betinabeverly-sailboat.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/betinabeverly-water.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/brunkfamily.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/cannonbeach-rowan-kite.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/cara-yellow-balloons-leap.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/cosby-clan-focus.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/dana-greenfield-sr.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { src: "images/dillaways-pumpkins.jpg", alt: "", orientation: "horizontal" },
+  { src: "images/dougarena-church-door.jpg", alt: "", orientation: "vertical" },
+  { src: "images/dougarena-ring-veil.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/dougarena-wedding-paraty.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/draggin-the-ave-cowgirl.jpg",
+    alt: "Black and white photo of young woman with straw hat and arm flexed showing tattoo of a bat and pumpkin",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/heather-bridal-side-piano.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/heather-bridals-squat.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/ingrid-family-stream.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { src: "images/jennyh-blue-dress.jpg", alt: "", orientation: "vertical" },
+  { src: "images/jennyh-green-umbrella.jpg", alt: "", orientation: "vertical" },
+  { src: "images/jennyh-white-umbrella.jpg", alt: "", orientation: "vertical" },
+  { src: "images/jess-irish-sr.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/joanna-wedding-back-frenchdoors.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/julieb-stairs-back.jpg",
+    alt: "A brunette woman dressed elegantly in black, posing with her back toward the camera and her head gazing to the ground",
+    orientation: "vertical",
+  },
+  { src: "images/kaley-ray-pond.jpg", alt: "", orientation: "vertical" },
+  { src: "images/katie-maturnity-shoes.jpg", alt: "", orientation: "vertical" },
+  { src: "images/katie-maturnity-tree.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/kendalld-woodsy-rock.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { src: "images/kesialee-frolic.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/kirk-jamie-license-hands.jpg",
+    alt: "Hands of the bride and groom on the marriage certificate, in black and white",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/kirk-jamie-wedding-ring.jpg",
+    alt: "A close-up shot of a groom's hand on his hip, showing his wedding ring",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { src: "images/lee-family-tree.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/ligia-claudiu-bouquet-kiss.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-backs.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-charger-sunglasses.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-compact-mirror.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-firstglance-stairs.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-hand-on-suit.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-robe.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-seated-snuggle.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-shoes.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-standing-snuggle.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/ligia-claudiu-wedding-sunset.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/lizgobble-bridal-altar.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/lizgobble-bridal-back-at-window.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/lizgobble-bridal-close.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/lizgobble-bridal-side-at-window-upstairs.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/lizgobble-bridals-side-at-window.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/melanie-bridal-sette-mirror.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/melanie-wedding-dance-ceiling-canapy.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/melanie-wedding-feet-car.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/miya-natsuhara-weights.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { src: "images/myhre.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/natalie-bridals-chaise.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/natsuhara-christmas-bowling.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/natsuhara-christmas-in-the-show.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/natsuhara-christmas-singing.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/natsuhara-christmas-superheros.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/natsuhara-japanese-card-spread.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/niko-stathokopoulos-guitar-dabi.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  { src: "images/ostheimer-family.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/rebecca-bridals-outdoor-chaise.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  { src: "images/sarah-bridals-full.jpg", alt: "", orientation: "vertical" },
+  { src: "images/scottrohwer-reeds.jpg", alt: "", orientation: "vertical" },
+  { src: "images/snowmageddon-close.jpg", alt: "", orientation: "vertical" },
+  {
+    src: "images/snowmageddon-with-maggie.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/susie-black-dress-entryway.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/susie-christmas-candles-mirror.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/susie-christmas-chair-legs.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/susie-christmas-cleveage.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/susie-christmas-dogs-legs.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/susie-christmas-mia-oliver.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/susie-christmas-mia-snuggle.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+  {
+    src: "images/susie-christmas-oliver.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/wanda-darcy-50th.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
 ];
 
 const galleryContainer = document.getElementById("photo-gallery");
@@ -324,7 +788,8 @@ photos.forEach((photo, index) => {
   img.alt = photo.alt;
 
   // Apply object-fit based on the orientation
-  img.style.objectFit = photo.fit || (photo.orientation === "horizontal" ? "cover" : "contain");
+  img.style.objectFit =
+    photo.fit || (photo.orientation === "horizontal" ? "cover" : "contain");
 
   item.appendChild(img);
   galleryContainer.appendChild(item);
