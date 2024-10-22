@@ -13,6 +13,7 @@ const photos = [
   {
     src: "images/amber-jeff-wedding-bands.jpg",
     alt: "Hands-only of the bride and groom overlaying the bride's dress",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -204,6 +205,7 @@ const photos = [
   {
     src: "images/wedding-car.jpeg",
     alt: "",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -255,6 +257,7 @@ const photos = [
   {
     src: "images/yellow-umbrella1.jpeg",
     alt: "",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -268,6 +271,7 @@ const photos = [
   {
     src: "images/yellow-umbrella3.jpeg",
     alt: "",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -494,7 +498,7 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-  { src: "images/dillaways-pumpkins.jpg", alt: "", orientation: "horizontal" },
+  { src: "images/dillaways-pumpkins.jpg", alt: "", orientation: "horizontal", fit: "contain", },
   { src: "images/dougarena-church-door.jpg", alt: "", orientation: "vertical" },
   { src: "images/dougarena-ring-veil.jpg", alt: "", orientation: "vertical" },
   {
@@ -607,6 +611,14 @@ const photos = [
     orientation: "vertical",
   },
   {
+    src: "images/melanie-wedding-feet-car.jpg",
+    alt: "",
+    isSuperstar: true,
+    orientation: "horizontal",
+    fit: "contain",
+  },
+
+  {
     src: "images/ligia-claudiu-wedding-shoes.jpg",
     alt: "",
     orientation: "vertical",
@@ -659,12 +671,6 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/melanie-wedding-feet-car.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
-  {
     src: "images/miya-natsuhara-weights.jpg",
     alt: "",
     orientation: "horizontal",
@@ -674,6 +680,7 @@ const photos = [
   {
     src: "images/natalie-bridals-chaise.jpg",
     alt: "",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -727,6 +734,14 @@ const photos = [
     orientation: "vertical",
   },
   {
+    src: "images/wanda-darcy-50th.jpg",
+    alt: "",
+    isSuperstar: true,
+    orientation: "horizontal",
+    fit: "contain",
+  },
+
+  {
     src: "images/susie-black-dress-entryway.jpg",
     alt: "",
     orientation: "vertical",
@@ -750,6 +765,7 @@ const photos = [
   {
     src: "images/susie-christmas-dogs-legs.jpg",
     alt: "",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -769,12 +785,6 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/wanda-darcy-50th.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
 ];
 
 const galleryContainer = document.getElementById("photo-gallery");
@@ -782,6 +792,11 @@ const galleryContainer = document.getElementById("photo-gallery");
 photos.forEach((photo, index) => {
   const item = document.createElement("div");
   item.className = `item ${photo.orientation} mosaic-item${index + 1}`;
+
+  // If the photo is a superstar, add an additional class for styling
+  if (photo.isSuperstar) {
+    item.classList.add('horizontal-superstar');
+  }
 
   const img = document.createElement("img");
   img.src = photo.src;
@@ -794,3 +809,4 @@ photos.forEach((photo, index) => {
   item.appendChild(img);
   galleryContainer.appendChild(item);
 });
+

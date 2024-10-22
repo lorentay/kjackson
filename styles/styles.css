@@ -57,12 +57,17 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-.mosaic {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  grid-auto-rows: 10px; /* Small base row height for better control */
-  gap: 10px;
-  grid-auto-flow: dense; /* Efficiently fills gaps */
+  .mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-auto-rows: 10px; /* Small base row height for better control */
+    gap: 10px;
+    grid-auto-flow: dense; /* Efficiently fills gaps */
+
+  }
+.horizontal-superstar {
+  grid-column: span 2;
+  grid-row: span 15;
 }
 
 .item {
