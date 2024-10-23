@@ -55,6 +55,7 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+ 
 }
 
   .mosaic {
@@ -65,35 +66,43 @@ nav ul li a:hover {
     grid-auto-flow: dense; /* Efficiently fills gaps */
 
   }
-.horizontal-superstar {
-  grid-column: span 2;
-  grid-row: span 15;
+  .horizontal-superstar {
+    grid-column: span 2; 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.horizontal-superstar img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container */
 }
 
 .item {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  transition: transform 0.3s;
-}
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;}
 
 .item img {
   width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
   object-fit: contain; /* Set a fallback behavior */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .item.horizontal {
-  grid-row: span 12; /* Use a consistent span for all horizontal images */
+  grid-row: span 14; /* Use a consistent span for all horizontal images */
 }
 
 .item.vertical {
-  grid-row: span 18; /* Use a consistent span for all vertical images */
+  grid-row: span 20; /* Use a consistent span for all vertical images */
 }
 
-.item img:hover {
+.item:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
@@ -109,6 +118,14 @@ footer {
   bottom: 0;
   flex-shrink: 0;
 }
+ footer a{
+  color: #333;
+  text-decoration: none;
+ }
+
+ footer a:hover {
+  text-decoration: underline;
+ }
 
 /* Styles for the About page */
 .about-section {
@@ -160,13 +177,6 @@ footer {
   max-width: 500px !important; /* Set a maximum width so they don’t get too large on bigger screens */
 }
 
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .about-section {
-    gap: 30px; /* Adjust spacing */
-  }
-
   .about-item {
     grid-template-columns: 1fr; /* Stack text and image vertically */
   }
@@ -187,10 +197,25 @@ footer {
   }
 }
 
+
+
+/* Media queries for smaller screens */
+
+@media (max-width: 768px) {
+  .about-section {
+    gap: 30px; 
+  }
+
 @media (max-width: 768px) {
   .photo {
     max-width: 100%; /* Allow full width on smaller screens */
   }
 }
+@media (max-width: 600px) {
+  .mosaic {
+      grid-template-columns: 1fr; /* Make grid items take full width */
+  }
+}
+
 
 
