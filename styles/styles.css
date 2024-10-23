@@ -95,11 +95,11 @@ nav ul li a:hover {
 }
 
 .item.horizontal {
-  grid-row: span 14; /* Use a consistent span for all horizontal images */
+  grid-row: span 12; /* Use a consistent span for all horizontal images */
 }
 
 .item.vertical {
-  grid-row: span 20; /* Use a consistent span for all vertical images */
+  grid-row: span 18; /* Use a consistent span for all vertical images */
 }
 
 .item:hover {

@@ -404,7 +404,7 @@ const photos = [
   {
     src: "images/dillaways-pumpkins.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
