@@ -2,14 +2,15 @@ const photos = [
   {
     src: "images/amber-jeff-wedding2.jpg",
     alt: "Backview of the bride dancing with her husband looking at the camera over her shoulder",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
-  {
-    src: "images/amber-jeff-wedding3.jpg",
-    alt: "Sideview of the bride dancing with her husband",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/amber-jeff-wedding3.jpg",
+  //   alt: "Sideview of the bride dancing with her husband",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/amber-jeff-wedding-bands.jpg",
     alt: "Hands-only of the bride and groom overlaying the bride's dress",
