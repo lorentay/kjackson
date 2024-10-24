@@ -183,6 +183,13 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
+
+  {
+    src: "images/joanna-wedding-back-frenchdoors.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+
   {
     src: "images/wedding-car.jpeg",
     alt: "",
@@ -196,10 +203,24 @@ const photos = [
     orientation: "vertical",
   },
   {
+    src: "images/melanie-bridal-sette-mirror.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+
+
+  {
     src: "images/bride-with-pearls-in-black-and-white.jpeg",
     alt: "",
     orientation: "vertical",
   },
+  {
+    src: "images/melanie-wedding-dance-ceiling-canapy.jpg",
+    alt: "",
+    orientation: "vertical",
+  },
+
   {
     src: "images/over-the-shoulder-topview.jpeg",
     alt: "",
@@ -432,19 +453,14 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-  {
-    src: "images/ingrid-family-stream.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
+  // {
+  //   src: "images/ingrid-family-stream.jpg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  //   fit: "contain",
+  // },
   {
     src: "images/jess-irish-sr.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
-  {
-    src: "images/joanna-wedding-back-frenchdoors.jpg",
     alt: "",
     orientation: "vertical",
   },
@@ -520,11 +536,11 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-  {
-    src: "images/ligia-claudiu-wedding-firstglance-stairs.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/ligia-claudiu-wedding-firstglance-stairs.jpg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/ligia-claudiu-wedding-hand-on-suit.jpg",
     alt: "",
@@ -579,24 +595,13 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/lizgobble-bridal-side-at-window-upstairs.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/lizgobble-bridal-side-at-window-upstairs.jpg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/lizgobble-bridals-side-at-window.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
-  {
-    src: "images/melanie-bridal-sette-mirror.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
-  {
-    src: "images/melanie-wedding-dance-ceiling-canapy.jpg",
     alt: "",
     orientation: "vertical",
   },
@@ -629,12 +634,12 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/natsuhara-christmas-superheros.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
+  // {
+  //   src: "images/natsuhara-christmas-superheros.jpg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  //   fit: "contain",
+  // },
   {
     src: "images/niko-stathokopoulos-guitar-dabi.jpg",
     alt: "",
@@ -680,12 +685,12 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/susie-christmas-candles-mirror.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
+  // {
+  //   src: "images/susie-christmas-candles-mirror.jpg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  //   fit: "contain",
+  // },
   {
     src: "images/susie-christmas-chair-legs.jpg",
     alt: "",
@@ -703,11 +708,11 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-  {
-    src: "images/susie-christmas-mia-oliver.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/susie-christmas-mia-oliver.jpg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/susie-christmas-mia-snuggle.jpg",
     alt: "",
