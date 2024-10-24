@@ -209,7 +209,6 @@ const photos = [
     fit: "contain",
   },
 
-
   {
     src: "images/bride-with-pearls-in-black-and-white.jpeg",
     alt: "",
@@ -611,10 +610,10 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-  { 
-    src: "images/myhre.jpg", 
-    alt: "", 
-    orientation: "vertical" 
+  {
+    src: "images/myhre.jpg",
+    alt: "",
+    orientation: "vertical",
   },
   {
     src: "images/natalie-bridals-chaise.jpg",
@@ -740,6 +739,7 @@ photos.forEach((photo, index) => {
   const img = document.createElement("img");
   img.src = photo.src;
   img.alt = photo.alt;
+  img.loading = "lazy"; 
 
   // Apply object-fit based on the orientation
   img.style.objectFit =
