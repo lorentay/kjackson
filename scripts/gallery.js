@@ -28,17 +28,17 @@ const photos = [
     alt: "Bride and groom facing each other with the bride's veil over their heads. Pink flower bouquet in the foreground",
     orientation: "vertical",
   },
-  {
-    src: "images/amber-jeff-wedding-hands.jpg",
-    alt: "A close-up shot of the bride's and groom's hands",
-    orientation: "horizontal",
-    fit: "contain",
-  },
-  {
-    src: "images/amber-jeff-wedding-veil2.jpg",
-    alt: "Bride and groom facing each other with the bride's veil over their heads. Pink flower bouquet in the foreground",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/amber-jeff-wedding-hands.jpg",
+  //   alt: "A close-up shot of the bride's and groom's hands",
+  //   orientation: "horizontal",
+  //   fit: "contain",
+  // },
+  // {
+  //   src: "images/amber-jeff-wedding-veil2.jpg",
+  //   alt: "Bride and groom facing each other with the bride's veil over their heads. Pink flower bouquet in the foreground",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/amber-jeff-wedding1.jpg",
     alt: "Backview of the bride dancing with her husband",
@@ -59,7 +59,7 @@ const photos = [
   {
     src: "images/becca-weber-bride3.jpg",
     alt: "A black and white portrait of a bride with dark hair, long curls, and tiara",
-    // isSuperstar: true,
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -95,11 +95,11 @@ const photos = [
     alt: "Headshot of a brunette woman under a white umbrella, blocking the sun",
     orientation: "vertical",
   },
-  {
-    src: "images/jennys-7th-anniversary3.jpg",
-    alt: "Headshot of a brunette woman under a white umbrella",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/jennys-7th-anniversary3.jpg",
+  //   alt: "Headshot of a brunette woman under a white umbrella",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/jennys-7th-anniversary2.jpg",
     alt: "Portrait of a brunette woman holding an opened umbrella to the side",
@@ -111,11 +111,11 @@ const photos = [
     orientation: "vertical",
   },
   ,
-  {
-    src: "images/tpb4u-party-wanda-standing.jpg",
-    alt: "Four women around a table with trays of food and glasses of wine in hand",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/tpb4u-party-wanda-standing.jpg",
+  //   alt: "Four women around a table with trays of food and glasses of wine in hand",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/amber-falling-off-fence.jpeg",
     alt: "A girl falling backward off a white fence",
@@ -167,11 +167,11 @@ const photos = [
     orientation: "vertical",
   },
 
-  {
-    src: "images/amber-in-red2.jpeg",
-    alt: "A girl in red",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/amber-in-red2.jpeg",
+  //   alt: "A girl in red",
+  //   orientation: "vertical",
+  // },
 
   {
     src: "images/bride-in-thought.jpeg",
@@ -191,7 +191,7 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/bride-in-the-garden.jpeg",
+    src: "images/melanie-bride-in-the-garden.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -270,11 +270,11 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/amber-corset-back.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/amber-corset-back.jpg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/amber-corset-chair.jpg",
     alt: "A woman dressed in a white corset and pink ruffle and lace skirt, sitting in a chair drinking a coupe of champagne",
@@ -286,15 +286,20 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/amber-corset-oliver.jpg",
+    src: "images/amber-corset-close-hand.jpg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/amber-in-pink-and-white1.jpeg",
-    alt: "A woman wearing a white bustier and pink ruffled skirt, dressed for a wedding",
+    src: "images/amber-corset-oliver.jpg",
+    alt: "",
     orientation: "vertical",
   },
+  // {
+  //   src: "images/amber-in-pink-and-white1.jpeg",
+  //   alt: "A woman wearing a white bustier and pink ruffled skirt, dressed for a wedding",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/amber-in-pink-and-white2.jpeg",
     alt: "A woman wearing a white bustier and pink ruffled skirt, dressed for a wedding",
@@ -305,12 +310,12 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/amber-flying-yellow-umbrella.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
+  // {
+  //   src: "images/amber-flying-yellow-umbrella.jpg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  //   fit: "contain",
+  // },
   {
     src: "images/amber-hippie-dry-grass-leaning.jpg",
     alt: "",
@@ -334,20 +339,21 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/amber-wheat.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
-  {
-    src: "images/anna-ruth-veil-lights.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
+  // {
+  //   src: "images/amber-wheat.jpg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
+  // {
+  //   src: "images/anna-ruth-veil-lights.jpg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  //   fit: "contain",
+  // },
   {
     src: "images/anna-ruth-violin-red-couch.jpg",
     alt: "",
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
