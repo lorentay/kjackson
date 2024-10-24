@@ -357,11 +357,11 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-  {
-    src: "images/annika-daisy.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/annika-daisy.jpg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/annika-sr-leaves.jpg",
     alt: "",
@@ -373,17 +373,17 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/betinabeverly-sailboat.jpg",
+    src: "images/betinabeverly-water.jpg",
     alt: "",
     orientation: "horizontal",
     fit: "contain",
   },
-  {
-    src: "images/brunkfamily.jpg",
-    alt: "",
-    orientation: "horizontal",
-    fit: "contain",
-  },
+  // {
+  //   src: "images/brunkfamily.jpg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  //   fit: "contain",
+  // },
   {
     src: "images/cannonbeach-rowan-kite.jpg",
     alt: "A small child on the beach with a red kite flying overhead",
@@ -411,7 +411,7 @@ const photos = [
   {
     src: "images/dillaways-pumpkins.jpg",
     alt: "",
-    // isSuperstar: true,
+    isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
