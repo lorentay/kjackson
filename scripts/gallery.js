@@ -198,12 +198,12 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/melanie-maternity-yellow.jpg",
+    src: "images/melanie-maternity-standing.jpg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/pregnant-woman.jpeg",
+    src: "images/melanie-maternity-sitting.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -326,7 +326,7 @@ const photos = [
   {
     src: "images/cara-yellow-balloons-leap.jpeg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -381,12 +381,12 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/katie-maturnity-shoes.jpg",
+    src: "images/katie-maternity-shoes.jpg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/katie-maturnity-tree.jpg",
+    src: "images/katie-maternity-tree.jpg",
     alt: "",
     orientation: "vertical",
   },
@@ -525,11 +525,6 @@ const photos = [
   },
   {
     src: "images/myhre.jpg",
-    alt: "",
-    orientation: "vertical",
-  },
-  {
-    src: "images/melanie-maturnity-yellow.jpg",
     alt: "",
     orientation: "vertical",
   },
