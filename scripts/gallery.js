@@ -419,6 +419,12 @@ const photos = [
     orientation: "vertical",
   },
   {
+    src: "images/lindsay-louis-engagement.jpeg",
+    alt: "",
+    orientation: "vertical",
+  },
+
+  {
     src: "images/amber-mary-poppins.jpeg",
     alt: "",
     orientation: "vertical",
