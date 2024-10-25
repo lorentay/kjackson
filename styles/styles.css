@@ -25,7 +25,7 @@ main {
 
 header {
   text-align: center;
-  padding: 20px;
+  margin-bottom: 20px;
   background-color: #fff;
   color: #333;
   line-height: 2;
@@ -56,6 +56,11 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
  
+}
+
+
+main {
+  margin-top: 60px; /* Adjust based on the navbar height */
 }
 
   .mosaic {
@@ -216,6 +221,3 @@ footer {
       grid-template-columns: 1fr; /* Make grid items take full width */
   }
 }
-
-
-
