@@ -4,14 +4,14 @@ const photos = [
     alt: "Backview of the bride dancing with her husband looking at the camera over her shoulder",
     isSuperstar: true,
     orientation: "horizontal",
-    // fit: "contain",
+    fit: "contain",
   },
   {
     src: "images/amber-jeff-wedding-bands.jpg",
     alt: "Hands-only of the bride and groom overlaying the bride's dress",
     isSuperstar: true,
     orientation: "horizontal",
-    // fit: "contain",
+    fit: "contain",
   },
   {
     src: "images/amber-jeff-wedding-flowers.jpg",
@@ -23,11 +23,6 @@ const photos = [
     alt: "Bride and groom facing each other with the bride's veil over their heads. Pink flower bouquet in the foreground",
     orientation: "vertical",
   },
-  // {
-  //   src: "images/amber-jeff-wedding1.jpg",
-  //   alt: "Backview of the bride dancing with her husband",
-  //   orientation: "horizontal",
-  // },
   {
     src: "images/becca-weber-bride1.jpg",
     alt: "Portrait of a bride with dark hair, long curls, and tiara",
@@ -326,7 +321,6 @@ const photos = [
   {
     src: "images/cara-yellow-balloons-leap.jpeg",
     alt: "",
-    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
