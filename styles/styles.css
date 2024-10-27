@@ -291,7 +291,7 @@ legend {
 
 @media (max-width: 600px) {
   .mosaic {
-    /* grid-template-columns: 1fr; */
+    grid-template-columns: 1fr;
     gap: 8px;
   }
   .item {
