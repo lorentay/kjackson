@@ -14,12 +14,12 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/amber-jeff-wedding-flowers.jpg",
+    src: "images/amber-jeff-wedding-flowers.jpeg",
     alt: "The bride gazing down at her bouquet of pink amber-jeff-wedding-flowers",
     orientation: "vertical",
   },
   {
-    src: "images/amber-jeff-wedding-veil.jpg",
+    src: "images/amber-jeff-wedding-veil.jpeg",
     alt: "Bride and groom facing each other with the bride's veil over their heads. Pink flower bouquet in the foreground",
     orientation: "vertical",
   },
@@ -42,7 +42,7 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/doug-arena-wedding-party.jpg",
+    src: "images/dougarena-wedding-party.jpeg",
     alt: "Wedding party portrait in a church",
     isSuperstar: true,
     orientation: "horizontal",
@@ -69,6 +69,26 @@ const photos = [
     orientation: "vertical",
   },
   {
+    src: "images/amberjeff-engagement-close.jpeg",
+    alt: "",
+    orientation: "vertical",
+  },
+  {
+    src: "images/amberjeff-engagement-fence.jpg",
+    alt: "",
+    orientation: "horizontal",
+  },
+  {
+    src: "images/amberjeff-engagement-train-station.jpeg",
+    alt: "",
+    orientation: "horizontal",
+  },
+  {
+    src: "images/amberjeff-engagement-hands.jpeg",
+    alt: "",
+    orientation: "horizontal",
+  },
+  {
     src: "images/jennys-7th-anniversary1.jpg",
     alt: "Headshot of a brunette woman under a white umbrella, blocking the sun",
     orientation: "vertical",
@@ -79,7 +99,7 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/amber-in-a-field.jpg",
+    src: "images/amber-in-a-field.jpeg",
     alt: "A young woman in a field of tall golden grasses, her head turned away",
     orientation: "vertical",
   },
@@ -238,18 +258,18 @@ const photos = [
 
   // code for the new batch of files
   {
-    src: "images/amber-corset-chair.jpg",
+    src: "images/amber-corset-chair.jpeg",
     alt: "A woman dressed in a white corset and pink ruffle and lace skirt, sitting in a chair drinking a coupe of champagne",
     orientation: "vertical",
   },
   {
-    src: "images/amber-hippie-dry-grass-leaning.jpg",
+    src: "images/amber-hippie-dry-grass-leaning.jpeg",
     alt: "",
     orientation: "horizontal",
     fit: "contain",
   },
   {
-    src: "images/amber-corset-close.jpg",
+    src: "images/amber-corset-close.jpeg",
     alt: "A portrait of a woman wearing a white corset and lace facinater, bright pink lipstick, with her hand lightly touching her fancy necklace. She's looking off into the distance",
     orientation: "vertical",
   },
@@ -264,7 +284,7 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/amber-corset-yellow-van.jpg",
+    src: "images/amber-corset-yellow-van.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -281,7 +301,7 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/amber-snow-red-boa.jpg",
+    src: "images/amber-snow-red-boa.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -293,12 +313,12 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/annika-sr-leaves.jpg",
+    src: "images/annika-sr-leaves.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/annika-the-moviestar.jpg",
+    src: "images/annika-the-moviestar.jpeg",
     alt: "Portrait of woman dressed in a fur coat and pearls, looking over her left shoulder",
     orientation: "vertical",
   },
@@ -337,7 +357,7 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/dillaways-pumpkins.jpg",
+    src: "images/dillaways-pumpkins.jpeg",
     alt: "",
     isSuperstar: true,
     orientation: "horizontal",
@@ -360,7 +380,7 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/susie-black-dress-entryway.jpg",
+    src: "images/susie-black-dress-entryway.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -408,7 +428,7 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/lee-family-tree.jpg",
+    src: "images/lee-family-tree.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -424,7 +444,7 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/ligia-claudiu-bouquet-kiss.jpg",
+    src: "images/ligia-claudiu-bouquet-kiss.jpeg",
     alt: "",
     orientation: "horizontal",
     fit: "contain",
@@ -441,7 +461,7 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/ligia-claudiu-wedding-charger-sunglasses.jpg",
+    src: "images/ligia-claudiu-wedding-charger-sunglasses.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -453,7 +473,7 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/ligia-claudiu-wedding-hand-on-suit.jpg",
+    src: "images/ligia-claudiu-wedding-hand-on-suit.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -463,7 +483,7 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/ligia-claudiu-wedding-seated-snuggle.jpg",
+    src: "images/ligia-claudiu-wedding-seated-snuggle.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -475,12 +495,12 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/ligia-claudiu-wedding-shoes.jpg",
+    src: "images/ligia-claudiu-wedding-shoes.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/ligia-claudiu-wedding-standing-snuggle.jpg",
+    src: "images/ligia-claudiu-wedding-standing-snuggle.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -491,22 +511,22 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/lizgobble-bridal-altar.jpg",
+    src: "images/lizgobble-bridal-altar.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/lizgobble-bridal-back-at-window.jpg",
+    src: "images/lizgobble-bridal-back-at-window.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/lizgobble-bridal-close.jpg",
+    src: "images/lizgobble-bridal-close.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/lizgobble-bridals-side-at-window.jpg",
+    src: "images/lizgobble-bridals-side-at-window.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -528,23 +548,23 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/natsuhara-christmas-bowling.jpg",
+    src: "images/natsuhara-christmas-bowling.jpeg",
     alt: "",
     orientation: "horizontal",
     fit: "contain",
   },
   {
-    src: "images/natsuhara-christmas-singing.jpg",
+    src: "images/natsuhara-christmas-singing.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/niko-stathokopoulos-guitar-dabi.jpg",
+    src: "images/niko-stathokopoulos-guitar-dabi.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/ostheimer-family.jpg",
+    src: "images/ostheimer-family.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -556,12 +576,12 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/scottrohwer-reeds.jpg",
+    src: "images/scottrohwer-reeds.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/snowmageddon-with-maggie.jpg",
+    src: "images/snowmageddon-with-maggie.jpeg",
     alt: "",
     orientation: "vertical",
   },
@@ -578,17 +598,17 @@ const photos = [
     fit: "contain",
   },
   {
-    src: "images/susie-christmas-chair-legs.jpg",
+    src: "images/susie-christmas-chair-legs.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/susie-christmas-cleveage.jpg",
+    src: "images/susie-christmas-cleveage.jpeg",
     alt: "",
     orientation: "vertical",
   },
   {
-    src: "images/susie-christmas-dogs-legs.jpg",
+    src: "images/susie-christmas-dogs-legs.jpeg",
     alt: "",
     isSuperstar: true,
     orientation: "horizontal",
