@@ -2,25 +2,21 @@ const photos = [
   {
     src: "images/amber-jeff-wedding2.jpg",
     alt: "Backview of the bride dancing with her husband looking at the camera over her shoulder",
-    // isSuperstar: true,
     orientation: "horizontal",
-    fit: "contain",
-  },
-  {
-    src: "images/amber-jeff-wedding-bands.jpg",
-    alt: "Hands-only of the bride and groom overlaying the bride's dress",
-    // isSuperstar: true,
-    orientation: "horizontal",
-    fit: "contain",
-  },
-  {
-    src: "images/amber-jeff-wedding-flowers.jpeg",
-    alt: "The bride gazing down at her bouquet of pink amber-jeff-wedding-flowers",
-    orientation: "vertical",
   },
   {
     src: "images/amber-jeff-wedding-veil.jpeg",
     alt: "Bride and groom facing each other with the bride's veil over their heads. Pink flower bouquet in the foreground",
+    orientation: "vertical",
+  },
+  {
+    src: "images/amber-jeff-wedding-bands.jpg",
+    alt: "Hands-only of the bride and groom overlaying the bride's dress",
+    orientation: "horizontal",
+  },
+  {
+    src: "images/amber-jeff-wedding-flowers.jpeg",
+    alt: "The bride gazing down at her bouquet of pink amber-jeff-wedding-flowers",
     orientation: "vertical",
   },
   {
@@ -32,22 +28,23 @@ const photos = [
     src: "images/becca-weber-bride2.jpg",
     alt: "A black and white photo of a bride lounging on a chaise",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/becca-weber-bride3.jpg",
     alt: "A black and white portrait of a bride with dark hair, long curls, and tiara",
-    // isSuperstar: true,
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/dougarena-wedding-party.jpeg",
     alt: "Wedding party portrait in a church",
-    // isSuperstar: true,
     orientation: "horizontal",
-    fit: "contain",
   },
+  {
+    src: "images/dougarena-church-door.jpeg",
+    alt: "Wedding party portrait in a church",
+    orientation: "vertical",
+  },
+
   {
     src: "images/doug-arena-brides-ring.jpg",
     alt: "Bride's hand surrounded by the veil",
@@ -74,20 +71,23 @@ const photos = [
     orientation: "vertical",
   },
   {
-    src: "images/amberjeff-engagement-fence.jpg",
-    alt: "",
-    orientation: "horizontal",
-  },
-  {
     src: "images/amberjeff-engagement-train-station.jpeg",
     alt: "",
     orientation: "horizontal",
   },
+
   {
-    src: "images/amberjeff-engagement-hands.jpeg",
+    src: "images/amberjeff-engagement-fence.jpg",
     alt: "",
     orientation: "horizontal",
   },
+//   {
+//   src: "images/amberjeff-engagement-hands.jpeg",
+//   alt: "",
+//   orientation: "horizontal",
+// },
+
+
   {
     src: "images/jennys-7th-anniversary1.jpg",
     alt: "Headshot of a brunette woman under a white umbrella, blocking the sun",
@@ -117,13 +117,11 @@ const photos = [
     src: "images/amber-in-the-pool.jpeg",
     alt: "Woman with short hair in a pool leaning on edge looking into the camera",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/amber-in-the-pool2.jpeg",
     alt: "Woman emerging from a pool and throwing her back while water creates a halo around her head",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/playful-by-the-pool.jpeg",
@@ -134,7 +132,6 @@ const photos = [
     src: "images/amber-sunflowers.jpeg",
     alt: "Portrait of a women by a garden of sunflowers",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/bride-behind-the-scenes.jpeg",
@@ -169,27 +166,23 @@ const photos = [
   {
     src: "images/wedding-car.jpeg",
     alt: "",
-    // isSuperstar: true,
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/melanie-bride-in-the-garden.jpeg",
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/melanie-bridal-sette-mirror.jpg",
-    alt: "",
-    // isSuperstar: true,
-    orientation: "horizontal",
-    fit: "contain",
-  },
-
+  
   {
     src: "images/bride-with-pearls-in-black-and-white.jpeg",
     alt: "",
     orientation: "vertical",
+  },
+  {
+    src: "images/melanie-bridal-sette-mirror.jpg",
+    alt: "",
+    orientation: "horizontal",
   },
   {
     src: "images/melanie-wedding-dance-ceiling-canapy.jpg",
@@ -205,7 +198,6 @@ const photos = [
     src: "images/heather-bridals-squat.jpg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/over-the-shoulder-topview.jpeg",
@@ -226,7 +218,6 @@ const photos = [
     src: "images/chocolate-face.jpeg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/amber-with-blue-hair.jpeg",
@@ -246,17 +237,13 @@ const photos = [
   {
     src: "images/beercan-curlers1.jpeg",
     alt: "",
-    // isSuperstar: true,
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/beercan-curlers2.jpeg",
     alt: "",
     orientation: "vertical",
   },
-
-  // code for the new batch of files
   {
     src: "images/amber-corset-chair.jpeg",
     alt: "A woman dressed in a white corset and pink ruffle and lace skirt, sitting in a chair drinking a coupe of champagne",
@@ -266,7 +253,6 @@ const photos = [
     src: "images/amber-hippie-dry-grass-leaning.jpeg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/amber-corset-close.jpeg",
@@ -292,7 +278,6 @@ const photos = [
     src: "images/amber-hippie-dry-grass-sitting.jpg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/amber-red-hair.jpg",
@@ -301,6 +286,12 @@ const photos = [
     fit: "contain",
   },
   {
+    src: "images/anna-ruth-violin-red-couch-close.jpg",
+    alt: "",
+    orientation: "horizontal",
+  },
+
+  {
     src: "images/amber-snow-red-boa.jpeg",
     alt: "",
     orientation: "vertical",
@@ -308,10 +299,9 @@ const photos = [
   {
     src: "images/anna-ruth-violin-red-couch.jpg",
     alt: "",
-    // isSuperstar: true,
     orientation: "horizontal",
-    fit: "contain",
   },
+
   {
     src: "images/annika-sr-leaves.jpeg",
     alt: "",
@@ -326,7 +316,6 @@ const photos = [
     src: "images/betinabeverly-water.jpg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/amber-in-pink-and-white2.jpeg",
@@ -342,32 +331,26 @@ const photos = [
     src: "images/cara-yellow-balloons-leap.jpeg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/cosby-clan-focus.jpg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/dana-greenfield-sr.jpg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/dillaways-pumpkins.jpeg",
     alt: "",
-    // isSuperstar: true,
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/draggin-the-ave-cowgirl.jpg",
     alt: "Black and white photo of young woman with straw hat and arm flexed showing tattoo of a bat and pumpkin",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/jess-irish-sr.jpg",
@@ -408,7 +391,6 @@ const photos = [
     src: "images/kendalld-woodsy-rock.jpg",
     alt: "",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/kesialee-frolic.jpg",
@@ -419,13 +401,11 @@ const photos = [
     src: "images/kirk-jamie-license-hands.jpg",
     alt: "Hands of the bride and groom on the marriage certificate, in black and white",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/kirk-jamie-wedding-ring.jpg",
     alt: "A close-up shot of a groom's hand on his hip, showing his wedding ring",
     orientation: "horizontal",
-    fit: "contain",
   },
   {
     src: "images/lee-family-tree.jpeg",
@@ -443,6 +423,12 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
+  // {
+  //   src: "images/marionette-bubblegum.jpg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
+
   {
     src: "images/ligia-claudiu-bouquet-kiss.jpeg",
     alt: "",
@@ -603,6 +589,13 @@ const photos = [
     orientation: "vertical",
   },
   {
+    src: "images/susie-christmas-mia-snuggle.jpg",
+    alt: "",
+    orientation: "horizontal",
+    fit: "contain",
+  },
+
+  {
     src: "images/susie-christmas-cleveage.jpeg",
     alt: "",
     orientation: "vertical",
@@ -611,12 +604,6 @@ const photos = [
     src: "images/susie-christmas-dogs-legs.jpeg",
     alt: "",
     // isSuperstar: true,
-    orientation: "horizontal",
-    fit: "contain",
-  },
-  {
-    src: "images/susie-christmas-mia-snuggle.jpg",
-    alt: "",
     orientation: "horizontal",
     fit: "contain",
   },
@@ -635,7 +622,6 @@ const photos = [
   {
     src: "images/yellow-umbrella3.jpeg",
     alt: "",
-    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -645,7 +631,6 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-
 ];
 
 const galleryContainer = document.getElementById("photo-gallery");
@@ -671,3 +656,4 @@ photos.forEach((photo, index) => {
   item.appendChild(img);
   galleryContainer.appendChild(item);
 });
+

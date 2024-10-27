@@ -45,7 +45,7 @@ h1 {
 nav ul {
   list-style-type: none;
   padding: 0;
-  font-family: "Antic Slab", serif;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 nav ul li {
@@ -60,56 +60,45 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
- 
 }
-
 
 main {
-  margin-top: 100px; /* Adjust based on the navbar height */
+  margin-top: 100px; /* adds space between the header and content */
 }
 
-  .mosaic {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-auto-rows: 10px; /* Small base row height for better control */
-    gap: 10px;
-    grid-auto-flow: dense; /* Efficiently fills gaps */
-
-  }
-  .horizontal-superstar {
-    grid-column: span 2; 
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden; 
-}
-
-.horizontal-superstar img {
-    width: 100%; /* Make the image fill the width of the container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image covers the container */
+.mosaic {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  /* align-items: start;
+  grid-auto-rows: auto; */
 }
 
 .item {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 3px;
+  padding: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;}
+}
 
 .item img {
   width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  object-fit: contain; /* Set a fallback behavior */
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .item.horizontal {
-  grid-row: span 12; /* Use a consistent span for all horizontal images */
+  object-fit: contain;
+  align-self: center;
+  grid-row: span 2;
 }
 
 .item.vertical {
-  grid-row: span 18; /* Use a consistent span for all vertical images */
+  object-fit: cover;
+  align-self: center;
+  grid-row: span 4;
 }
 
 .item:hover {
@@ -128,14 +117,15 @@ footer {
   bottom: 0;
   flex-shrink: 0;
 }
- footer a{
+
+footer a {
   color: #333;
   text-decoration: none;
- }
+}
 
- footer a:hover {
+footer a:hover {
   text-decoration: underline;
- }
+}
 
 /* Styles for the About page */
 .about-section {
@@ -182,116 +172,139 @@ footer {
 }
 
 .photo {
-  width: 100% !important; /* Ensure the photo takes up the full width of its container */
-  height: auto !important; /* Maintain the aspect ratio */
-  max-width: 500px !important; /* Set a maximum width so they don’t get too large on bigger screens */
+  width: 100% !important;
+  height: auto !important;
+  max-width: 500px !important;
 }
 
-  .about-item {
-    grid-template-columns: 1fr; /* Stack text and image vertically */
-  }
-
-  .about-item.reverse {
-    direction: ltr; /* Reset direction for reverse items on mobile */
-    grid-template-columns: 1fr; /* Ensure the image stacks below the text */
-  }
-
-  .about-img {
-    width: 100%; /* Make the image take full width */
-    max-height: none; /* Remove height restriction for better flexibility */
-  }
-
-  .text-box {
-    padding: 10px;
-    font-size: 1em; /* Slightly reduce font size */
-  }
-
-
-  /* contact page styles */
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.25rem;
+.about-item {
+  grid-template-columns: 1fr;
 }
+
+.about-item.reverse {
+  direction: ltr;
+  grid-template-columns: 1fr;
+}
+
+.about-img {
+  width: 100%;
+  max-height: none;
+}
+
+.text-box {
+  padding: 10px;
+  font-size: 1em;
+}
+
+/* contact page styles */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+
 .column {
-    flex: 1 1 100%;
-    padding: 1.25rem;
+  flex: 1 1 100%;
+  padding: 1.25rem;
 }
+
 .contact-info {
-    text-align: left;
+  text-align: left;
 }
+
 .contact-info img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1.25rem;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.25rem;
 }
+
 .contact-info a {
-    display: block;
-    margin: 0.6rem 0;
-    color: #0a3c60;
-    text-decoration: none;
-    font-weight: bold;
+  display: block;
+  margin: 0.6rem 0;
+  color: #0a3c60;
+  text-decoration: none;
+  font-weight: bold;
 }
+
 .contact-info a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
+
 label {
-    display: block;
-    margin-bottom: 0.3rem;
+  display: block;
+  margin-bottom: 0.3rem;
 }
-input, textarea, select {
-    width: 95%;
-    padding: 0.6rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+
+input,
+textarea,
+select {
+  width: 95%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
 }
+
 button {
-    padding: 1.2rem 1.2rem;
-    background-color: #81b640;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
+  padding: 1.2rem 1.2rem;
+  background-color: #81b640;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
 }
+
 button:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
+
 fieldset {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 0.3rem;
-    margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
 }
+
 legend {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .select-preferences {
-    margin-bottom: 10px;
-} 
-
-
-
+  margin-bottom: 10px;
+}
 
 /* Media queries for smaller screens */
 
 @media (max-width: 768px) {
   .about-section {
-    gap: 30px; 
+    gap: 30px;
   }
+}
 
 @media (max-width: 768px) {
   .photo {
-    max-width: 100%; /* Allow full width on smaller screens */
+    max-width: 100%;
+    height: auto;
   }
 }
+
 @media (max-width: 600px) {
   .mosaic {
-      grid-template-columns: 1fr; /* Make grid items take full width */
+    /* grid-template-columns: 1fr; */
+    gap: 8px;
+  }
+  .item {
+    padding: 5px;
+    transform: none; 
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
