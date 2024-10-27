@@ -2,14 +2,14 @@ const photos = [
   {
     src: "images/amber-jeff-wedding2.jpg",
     alt: "Backview of the bride dancing with her husband looking at the camera over her shoulder",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
   {
     src: "images/amber-jeff-wedding-bands.jpg",
     alt: "Hands-only of the bride and groom overlaying the bride's dress",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -37,14 +37,14 @@ const photos = [
   {
     src: "images/becca-weber-bride3.jpg",
     alt: "A black and white portrait of a bride with dark hair, long curls, and tiara",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
   {
     src: "images/dougarena-wedding-party.jpeg",
     alt: "Wedding party portrait in a church",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -169,7 +169,7 @@ const photos = [
   {
     src: "images/wedding-car.jpeg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -181,7 +181,7 @@ const photos = [
   {
     src: "images/melanie-bridal-sette-mirror.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -246,7 +246,7 @@ const photos = [
   {
     src: "images/beercan-curlers1.jpeg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -308,7 +308,7 @@ const photos = [
   {
     src: "images/anna-ruth-violin-red-couch.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -359,7 +359,7 @@ const photos = [
   {
     src: "images/dillaways-pumpkins.jpeg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -468,7 +468,7 @@ const photos = [
   {
     src: "images/ligia-claudiu-wedding-compact-mirror.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -490,7 +490,7 @@ const photos = [
   {
     src: "images/melanie-wedding-feet-car.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -533,7 +533,7 @@ const photos = [
   {
     src: "images/miya-natsuhara-weights.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -571,7 +571,7 @@ const photos = [
   {
     src: "images/rebecca-bridals-outdoor-chaise.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -593,7 +593,7 @@ const photos = [
   {
     src: "images/wanda-darcy-50th.jpg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -610,7 +610,7 @@ const photos = [
   {
     src: "images/susie-christmas-dogs-legs.jpeg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
@@ -635,7 +635,7 @@ const photos = [
   {
     src: "images/yellow-umbrella3.jpeg",
     alt: "",
-    isSuperstar: true,
+    // isSuperstar: true,
     orientation: "horizontal",
     fit: "contain",
   },
