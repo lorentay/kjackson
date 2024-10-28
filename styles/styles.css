@@ -236,6 +236,7 @@ footer a:hover {
   color: #333;
   text-decoration: none;
   word-break: break-all;
+  cursor: pointer;
 }
 
 .contact-form {
@@ -244,17 +245,22 @@ footer a:hover {
   flex-direction: column;
 }
 
+.contact-form fieldset label {
+  cursor: pointer;
+}
+
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
 .contact-form textarea {
   padding: 8px; /* Adds space inside the input fields */
+  cursor: pointer;
 }
 
 .contact-form input[type="tel"] {
   margin-bottom: 20px; /* Adjust the value to increase/decrease spacing */
 }
-
 
 
 .contact-form label {
