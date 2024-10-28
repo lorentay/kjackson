@@ -29,18 +29,16 @@
     </header>
     <main>
       <div class="contact-section">
-        <h2>Contact Me</h2>
-        <p>
-          Local to the Seattle area, I'm here for your most memorable moments. Inquire now!
-         <p>Email: <a href="mailto:kimberly@kimberlyhyattjackson.com" class="email-link"</p>kimberly@kimberlyhyattjackson.com</a>
-        
-        </p>
+        <h1>Contact Me</h1>
 
         <!-- Contact Section with White Background Box -->
 
         <div class="contact-container">
-          <!-- Left Column: Photo and Email -->
           <div class="contact-info">
+            <p>
+              Local to the Seattle area, I'm here for your most memorable
+              moments. Inquire now!
+            </p>
             <img
               src="images/kimberly-camera-only.jpeg"
               alt="Lifestyle shot"
@@ -54,30 +52,21 @@
             <input type="text" id="name" name="name" required />
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              title="Please enter a valid email address, e.g., name@example.com"
+            />
 
             <label for="phone">Phone Number (optional)</label>
-            <input type="tel" id="phone" name="phone" />
-
-            <!-- <label>Best Time to Reach You:</label> -->
-            <!-- <div class="radio-group">
-              <label
-                ><input type="radio" name="contact_time" value="morning" />
-                Morning</label
-              >
-              <label
-                ><input type="radio" name="contact_time" value="afternoon" />
-                Afternoon</label
-              >
-              <label
-                ><input type="radio" name="contact_time" value="evening" />
-                Evening</label
-              >
-            </div> -->
-
+            <input type="tel" id="phone" name="phone">
+            
             <fieldset>
               <legend class="checkbox-heading">
-                I'm Interested in the Following:
+                I'm interested in the following (select all that apply):
               </legend>
               <label
                 ><input type="checkbox" name="services" value="portraits" />
@@ -105,8 +94,30 @@
               >
             </fieldset>
 
-            <label for="comments">Tell me more about what you're looking for:</label>
-            <textarea id="comments" name="comments" rows="4" maxlength="500"></textarea>
+            <label for="comments"
+              >Tell me more about what you're looking for:</label
+            >
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder="750 characters maximum"
+              maxlength="750"
+            ></textarea>
+
+            <p>
+              Do you need it by a specific date? If so, please select from the
+              following:
+            </p>
+            <input type="date" id="specific-date" name="specific-date" />
+
+            <p>Or choose a general timeframe:</p>
+            <select id="general-timeframe" name="general-timeframe">
+              <option value="" disabled selected>Select timeframe</option>
+              <option value="next-month">1-2 months</option>
+              <option value="3-6-months">3-6 months</option>
+              <option value="flexible">I'm flexible</option>
+            </select>
 
             <button type="submit">Submit</button>
           </form>
@@ -122,6 +133,16 @@
         | Seattle, WA
       </p>
     </footer>
-    <script src="scripts/gallery.js"></script>
-  </body>
+    <script>
+      document.getElementById("phone").addEventListener("input", function (e) {
+          let input = e.target.value.replace(/\D/g, ""); // Remove all non-numeric characters
+          if (input.length > 3 && input.length <= 6) {
+              input = input.replace(/^(\d{3})(\d+)/, "$1.$2"); // Format as 123.456
+          } else if (input.length > 6) {
+              input = input.replace(/^(\d{3})(\d{3})(\d+)/, "$1.$2.$3"); // Format as 123.456.7890
+          }
+          e.target.value = input;
+      });
+      </script>  
+      </body>
 </html>
