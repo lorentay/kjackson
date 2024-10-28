@@ -62,8 +62,8 @@
             />
 
             <label for="phone">Phone Number (optional)</label>
-            <input type="tel" id="phone" name="phone">
-            
+            <input type="tel" id="phone" name="phone" />
+
             <fieldset>
               <legend class="checkbox-heading">
                 I'm interested in the following (select all that apply):
@@ -135,14 +135,14 @@
     </footer>
     <script>
       document.getElementById("phone").addEventListener("input", function (e) {
-          let input = e.target.value.replace(/\D/g, ""); // Remove all non-numeric characters
-          if (input.length > 3 && input.length <= 6) {
-              input = input.replace(/^(\d{3})(\d+)/, "$1.$2"); // Format as 123.456
-          } else if (input.length > 6) {
-              input = input.replace(/^(\d{3})(\d{3})(\d+)/, "$1.$2.$3"); // Format as 123.456.7890
-          }
-          e.target.value = input;
+        let input = e.target.value.replace(/\D/g, ""); // Remove all non-numeric characters
+        if (input.length > 3 && input.length <= 6) {
+          input = input.replace(/^(\d{3})(\d+)/, "$1.$2"); // Format as 123.456
+        } else if (input.length > 6) {
+          input = input.replace(/^(\d{3})(\d{3})(\d+)/, "$1.$2.$3"); // Format as 123.456.7890
+        }
+        e.target.value = input;
       });
-      </script>  
-      </body>
+    </script>
+  </body>
 </html>
