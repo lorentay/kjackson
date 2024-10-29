@@ -6,7 +6,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  
 }
 
 body {
@@ -196,7 +195,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url("../images/amber-jeff-wedding-bands.jpg"); 
+  background-image: url("../images/amber-jeff-wedding-bands.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -227,18 +226,16 @@ footer a:hover {
   border-radius: 8px;
   margin-top: 20px;
   margin-left: 15px;
+  margin-bottom: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.profile-photo {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
 }
 
 .profile-photo:hover {
   transform: scale(1.05); /* Slightly enlarges the image on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
 }
-
 
 .email-link {
   display: inline-block;
@@ -266,19 +263,25 @@ footer a:hover {
   padding: 8px; /* Adds space inside the input fields */
   cursor: pointer;
   margin-bottom: 20px;
-  transition: outline 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .contact-form input[type="text"]:hover,
 .contact-form input[type="email"]:hover,
 .contact-form input[type="tel"]:hover,
 .contact-form textarea:hover {
-  outline: 1.5px solid #5a9a6a; 
+  outline: 1.5px solid #5a9a6a;
   box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); /* Adds a soft glow */
 }
 .contact-form input[type="date"],
 .contact-form select {
   transition: outline 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+
 }
 
 .contact-form input[type="date"]:hover,
@@ -287,23 +290,58 @@ footer a:hover {
   box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); /* Subtle shadow */
 }
 
-/* .contact-form input,
+.contact-form input:not([type="checkbox"]), /* :not prevents the checkboxes from effects of padding on other elements */
 .contact-form select,
 .contact-form textarea {
-  padding: 12px; 
-  height: 40px; 
-} */
-
-
+  height: 40px;
+}
 
 .contact-form input[type="tel"] {
-  margin-bottom: 20px; /* Adjust the value to increase/decrease spacing */
+  margin-bottom: 20px;
 }
+
+/* radio button styles */
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+.contact-method-radio {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 0 10px;
+  gap: 15px;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+.contact-method-radio label {
+  margin-right: 1.6rem;
+  color: #3d3d3d;
+  
+}
+.contact-method-radio:hover {
+  border-color: #5a9a6a;
+  box-shadow: 0 0 5px rgba(9, 154, 106, 0.3);
+}
+
 
 .contact-form fieldset {
-  margin-bottom: 20px; /* Adjust the value to create the desired space */
+  margin-bottom: 20px;
 }
 
+.checkbox-fieldset {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkbox-fieldset:hover {
+  border-color: #5a9a6a;
+  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3);
+}
 
 .contact-form textarea {
   margin-bottom: 10px; /* Adds space below the textarea */
@@ -312,7 +350,6 @@ footer a:hover {
 .contact-form p {
   margin-bottom: 5px; /* Adjust this value as needed for spacing */
 }
-
 
 .checkbox-heading {
   margin-left: 5px;
@@ -345,26 +382,31 @@ footer a:hover {
   font-weight: bold;
   transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
   box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
-              0 0 0 -0.6em rgba(13, 109, 253, 0.7); /* Initial shadow */
+    0 0 0 -0.6em rgba(13, 109, 253, 0.7); /* Initial shadow */
 }
 
 .contact-form button.submit-button:hover {
   background-color: #3a8450;
-  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%),
-              0 0 0 0.5em rgba(13, 109, 253, 0.7); /* Hover shadow */
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(13, 109, 253, 0.7); /* Hover shadow */
   opacity: 0.7;
 }
 
 .contact-form button.submit-button:focus-visible {
-  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%),
-              0 0 0 0.5em rgba(13, 109, 253, 0.7);
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(13, 109, 253, 0.7);
 }
 
 .contact-form button.submit-button:focus {
   outline: none;
 }
 
-
+.signature {
+    font-family: "Rouge Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+  }
+  
+}
 
 /* Media queries for smaller screens */
 

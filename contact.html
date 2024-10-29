@@ -44,6 +44,8 @@
               alt="Lifestyle shot"
               class="profile-photo"
             />
+            <p>"You'll look back on these days and wish you knew how good you looked."</p>
+            <p class="signature">&mdash;Kimberly Jackson</p>
           </div>
 
           <!-- Right Column: Contact Form -->
@@ -64,7 +66,15 @@
             <label for="phone">Phone Number (optional)</label>
             <input type="tel" id="phone" name="phone" />
 
-            <fieldset>
+            <fieldset class="contact-method-radio">
+              <legend>Preferred Contact Method</legend>
+              <label><input type="radio" name="contact-method" value="email" required> Email</label>
+              <label><input type="radio" name="contact-method" value="text"> Text</label>
+              <label><input type="radio" name="contact-method" value="phone-call"> Phone</label>
+            </fieldset>
+
+
+            <fieldset class="checkbox-fieldset">
               <legend class="checkbox-heading">
                 I'm interested in the following (select all that apply):
               </legend>
