@@ -196,7 +196,7 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url("../images/amber-jeff-wedding-bands.jpg"); /* Replace with your image path */
+  background-image: url("../images/amber-jeff-wedding-bands.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -276,6 +276,25 @@ footer a:hover {
   outline: 1.5px solid #5a9a6a; 
   box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); /* Adds a soft glow */
 }
+.contact-form input[type="date"],
+.contact-form select {
+  transition: outline 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input[type="date"]:hover,
+.contact-form select:hover {
+  outline: 2px solid #5a9a6a; /* Consistent outline color */
+  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); /* Subtle shadow */
+}
+
+/* .contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px; 
+  height: 40px; 
+} */
+
+
 
 .contact-form input[type="tel"] {
   margin-bottom: 20px; /* Adjust the value to increase/decrease spacing */
@@ -321,7 +340,7 @@ footer a:hover {
   color: #ffffff;
   font-size: 1rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
