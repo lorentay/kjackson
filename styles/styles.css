@@ -190,7 +190,6 @@ footer a:hover {
 }
 
 /* contact page styles */
-
 .contact-page {
   display: flex;
   flex-direction: column;
@@ -200,7 +199,6 @@ footer a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .contact-section {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
@@ -209,17 +207,14 @@ footer a:hover {
   max-width: 900px;
   margin: 20px auto;
 }
-
 .contact-container {
   display: flex;
   gap: 50px;
 }
-
 .contact-info {
   width: 30%;
   text-align: left;
 }
-
 .profile-photo {
   width: 100%;
   max-width: 200px;
@@ -229,33 +224,27 @@ footer a:hover {
   margin-bottom: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-
 }
-
 .profile-photo:hover {
-  transform: scale(1.05); /* Slightly enlarges the image on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
-.email-link {
+/* .email-link {
   display: inline-block;
   margin-top: 10px;
   color: #333;
   text-decoration: none;
   word-break: break-all;
   cursor: pointer;
-}
-
+} */
 .contact-form {
   width: 60%;
   display: flex;
   flex-direction: column;
 }
-
 .contact-form fieldset label {
   cursor: pointer;
 }
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
@@ -266,36 +255,30 @@ footer a:hover {
   border: 2px solid #ccc;
   border-radius: 5px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-
 }
-
 .contact-form input[type="text"]:hover,
 .contact-form input[type="email"]:hover,
 .contact-form input[type="tel"]:hover,
 .contact-form textarea:hover {
   outline: 1.5px solid #5a9a6a;
-  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); /* Adds a soft glow */
+  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3);
 }
 .contact-form input[type="date"],
 .contact-form select {
   transition: outline 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid #ccc;
   border-radius: 5px;
-
 }
-
 .contact-form input[type="date"]:hover,
 .contact-form select:hover {
-  outline: 2px solid #5a9a6a; /* Consistent outline color */
-  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); /* Subtle shadow */
+  outline: 2px solid #5a9a6a;
+  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); 
 }
-
 .contact-form input:not([type="checkbox"]), /* :not prevents the checkboxes from effects of padding on other elements */
 .contact-form select,
 .contact-form textarea {
   height: 40px;
 }
-
 .contact-form input[type="tel"] {
   margin-bottom: 20px;
 }
@@ -315,49 +298,39 @@ input[type="radio"] {
   gap: 15px;
   border-radius: 5px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-
 }
 .contact-method-radio label {
   margin-right: 1.6rem;
   color: #3d3d3d;
-  
 }
 .contact-method-radio:hover {
   border-color: #5a9a6a;
   box-shadow: 0 0 5px rgba(9, 154, 106, 0.3);
 }
-
-
 .contact-form fieldset {
   margin-bottom: 20px;
 }
-
 .checkbox-fieldset {
   border: 2px solid #ccc;
   border-radius: 5px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .checkbox-fieldset:hover {
   border-color: #5a9a6a;
   box-shadow: 0 0 5px rgba(90, 154, 106, 0.3);
 }
-
 .contact-form textarea {
   margin-bottom: 10px; /* Adds space below the textarea */
 }
-
 .contact-form p {
-  margin-bottom: 5px; /* Adjust this value as needed for spacing */
+  margin-bottom: 5px;
 }
-
 .checkbox-heading {
   margin-left: 5px;
   margin-bottom: 10px;
 }
-
 #specific-date {
-  margin-bottom: 20px; /* Adjust the value as needed */
+  margin-bottom: 10px;
 }
 
 #general-timeframe {
