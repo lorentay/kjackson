@@ -230,6 +230,16 @@ footer a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+.profile-photo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.profile-photo:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+}
+
+
 .email-link {
   display: inline-block;
   margin-top: 10px;
@@ -256,6 +266,15 @@ footer a:hover {
   padding: 8px; /* Adds space inside the input fields */
   cursor: pointer;
   margin-bottom: 20px;
+  transition: outline 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.contact-form input[type="text"]:hover,
+.contact-form input[type="email"]:hover,
+.contact-form input[type="tel"]:hover,
+.contact-form textarea:hover {
+  outline: 1.5px solid #5a9a6a; 
+  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3); /* Adds a soft glow */
 }
 
 .contact-form input[type="tel"] {
@@ -296,22 +315,37 @@ footer a:hover {
   padding-left: 5px;
 }
 
-.contact-form button {
-  padding: 12px; /* Adds space inside the button */
-  background-color: #5a9a6a; /* Dark color for contrast */
-  color: #ffffff; /* White text color for readability */
+.contact-form button.submit-button {
+  padding: 12px;
+  background-color: #5a9a6a;
+  color: #ffffff;
   font-size: 1rem;
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Change cursor on hover */
-  font-weight: bold; /* Make text stand out */
-  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
+  box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
+              0 0 0 -0.6em rgba(13, 109, 253, 0.7); /* Initial shadow */
 }
 
-.contact-form button:hover {
+.contact-form button.submit-button:hover {
   background-color: #3a8450;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%),
+              0 0 0 0.5em rgba(13, 109, 253, 0.7); /* Hover shadow */
+  opacity: 0.7;
 }
+
+.contact-form button.submit-button:focus-visible {
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%),
+              0 0 0 0.5em rgba(13, 109, 253, 0.7);
+}
+
+.contact-form button.submit-button:focus {
+  outline: none;
+}
+
+
 
 /* Media queries for smaller screens */
 
