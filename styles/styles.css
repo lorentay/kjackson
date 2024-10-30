@@ -265,15 +265,6 @@ footer a:hover {
   transition: outline 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid #ccc;
   border-radius: 5px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
-  background-position: right 10px center;
-  background-repeat: no-repeat;
-  background-size: 16px;
-}
-
-input[type="date"] {
-  -webkit-appearance: menulist; /* For Safari */
-  appearance: menulist; /* For other browsers */
 }
 .contact-form input[type="date"]:hover,
 .contact-form select:hover {
@@ -387,7 +378,8 @@ input[type="radio"] {
   font-family: "Rouge Script", cursive;
   font-weight: 400;
   font-style: normal;
-  text-align: right;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 /* Media queries for smaller screens */
@@ -443,5 +435,6 @@ input[type="radio"] {
   select {
     width: 100%;
     padding-right: 30px;
-  }  
+  }
+
 }
