@@ -1,4 +1,4 @@
-Css for completed home and contact pages * {
+* {
   box-sizing: border-box;
 }
 
@@ -11,10 +11,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  /* font-family: Verdana, Arial, sans-serif; */
-  /* font-family: "Cormorant Garamond", serif; */
   font-family: "Antic Slab", serif;
-  /* font-family: Georgia, serif; * */
   background-color: #f4f4f4;
   line-height: 1.5;
 }
@@ -36,6 +33,7 @@ header {
   background-color: #fff;
   color: #333;
   line-height: 1.5;
+  margin-bottom: 24px;
 }
 
 h1,
@@ -125,13 +123,30 @@ footer a:hover {
 }
 
 /* Styles for the About page */
-body.about-page {
+/* body.about-page {
   background-image: url("../images/yellow-umbrella4.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+} */
+
+body.about-page {
+  background-image: url("../images/yellow-umbrella4.jpeg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  animation: scroll 30s linear infinite;
 }
+
+@keyframes scroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
 .about-section {
   width: 100%;
   display: flex;
