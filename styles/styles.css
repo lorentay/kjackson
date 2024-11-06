@@ -441,4 +441,56 @@ input[type="radio"] {
 
 /* Media queries for smaller screens */
 
-grid-template-columns: repeat(2, minmax(200px, 1fr));
+/* Media queries for smaller screens */
+
+@media (max-width: 768px) {
+  .about-section {
+    gap: 30px;
+  }
+  .about-img {
+    max-width: 100%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+  }
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    text-align: left;
+  }
+  .contact-form fieldset label {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.contact-image {
+  max-width: 100%; /* Prevents the image from exceeding the width of its container */
+  width: auto;
+  height: auto; /* Maintains aspect ratio */
+  max-height: 300px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .mosaic {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .item {
+    padding: 5px;
+    transform: none;
+  }
+
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
