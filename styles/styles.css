@@ -9,8 +9,6 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: "Antic Slab", serif;
   background-color: #f4f4f4;
   line-height: 1.5;
@@ -30,9 +28,7 @@ header {
   z-index: 1;
   padding: 10px;
   text-align: center;
-  /* background-color: #fff; */
   background: rgba(255, 255, 255, 0.8);
-
   color: #333;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -42,6 +38,7 @@ header {
 h1,
 h2 {
   font-family: "Alegreya Sans", sans-serif;
+  /* font-family: "Roboto Mono", monospace; */
   margin: 0;
   font-weight: 400;
 }
@@ -51,180 +48,107 @@ nav ul {
   padding: 0;
   font-family: "Alegreya Sans", sans-serif;
 }
-
 nav ul li {
   display: inline;
   margin: 0 15px;
 }
-
 nav ul li a {
   color: #333;
   text-decoration: none;
 }
-
 nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* grid styles for Home the Home page */
 .mosaic {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: 160px;  */
   gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
 }
-
 .item {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
-  /* gap: 10px; */
-  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.08)
 }
-
 .item img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
 }
-
 .item.horizontal {
   object-fit: contain;
   align-self: center;
   grid-row: span 2;
 }
-
 .item.vertical {
   object-fit: cover;
   align-self: center;
   grid-row: span 4;
 }
-
 .item:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-footer {
-  text-align: center;
-  font-size: small;
-  line-height: 0.9;
-  font-family: "Alegreya Sans", sans-serif;
-  padding: 20px;
-  background-color: #fff;
-  color: #333;
-  flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.8);
-}
-footer p {
-  margin: 0;
-}
-
-footer a {
-  color: #333;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.footer-nav li:not(:last-child)::after {
-  content: "|";
-  margin-left: 1.25rem;
-}
-
 /* Styles for the About page */
-body.about-page {
-  background-image: url("../images/amber-jeff-wedding2.jpg");
+.about-page {
+  background-image: url("../images/yellow-umbrella4.jpeg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  backdrop-filter: blur(3px);
+  padding: 20px;
 }
 
-.about-section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.about-page .mosaic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
-
-.first-section {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.first-section .about-me-photo {
-  width: 250px;
+.about-page .item {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  margin-top: 20px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  /* box-shadow:  10px 10px 20px #b3b3b3,  -10px -10px 20px #ffffff; */
+  padding: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.7)
 }
-.about-me-photo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.first-section .text-box {
-  max-width: 55%;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 20px;
-  margin: 30px;
-  /* box-shadow: 10px 10px 20px #b3b3b3,  -10px -10px 20px #ffffff; */
-}
-.second-section {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
-  flex-direction: row;
-}
-.second-section .about-headshot-photo {
-  width: 350px;
+.about-page .item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   border-radius: 5px;
-  margin-left: 100px;
+}
+.about-page .item.horizontal {
+  object-fit: contain;
+  align-self: center;
+  /* grid-column: span 1; */
+}
+.about-page .item.vertical {
+  align-self: center;
+  /* grid-column: span 1; */
+}
+.about-page .item:hover {
+  transform: scale(1.1);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-.about-headshot-photo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.second-section .text-box {
-  width: 70%;
-  max-width: 600px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 8px;
-  text-align: right;
-  /* box-shadow:  10px 10px 20px #b3b3b3,  -10px -10px 20px #ffffff; */
-}
-
-.third-section {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 30px;
-}
-
-.third-section .text-box {
-  max-width: 55%; /* Adjust as needed */
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 8px;
-  text-align: left;
-  /* box-shadow:  10px 10px 20px #b3b3b3,  -10px -10px 20px #ffffff; */
-}
 
 /* contact page styles */
+body.contact-page {
+  display: flex;
+  flex-direction: column;
+}
 body.contact-page {
   background-image: url("../images/amber-jeff-wedding-bands.jpg");
   background-size: cover;
@@ -233,14 +157,13 @@ body.contact-page {
   background-repeat: no-repeat;
   backdrop-filter: blur(3px);
 }
-
 .contact-section {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 5px;
   max-width: 900px;
-  margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 50px auto 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 .contact-container {
   display: flex;
@@ -256,14 +179,16 @@ body.contact-page {
 }
 .profile-photo {
   max-width: 100%;
-  border-radius: 3px;
+  border-radius: 5px;
+  padding: 20px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 .profile-photo:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 .contact-form {
   width: 60%;
   display: flex;
@@ -274,7 +199,6 @@ body.contact-page {
   padding: 0.5em; /* Adjust padding as needed */
   display: inline-block; /* Ensures padding applies around the text */
 }
-
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form input[type="tel"],
@@ -283,10 +207,10 @@ body.contact-page {
   cursor: pointer;
   margin-bottom: 20px;
   border: 2px solid #ccc;
-  border-radius: 8px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 3px;
   height: 60px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-form input[type="text"]:hover,
 .contact-form input[type="email"]:hover,
@@ -300,9 +224,9 @@ body.contact-page {
   max-width: 100%;
   min-width: 250px;
   width: 100%;
-  transition: outline 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid #ccc;
   border-radius: 5px;
+  transition: outline 0.3s ease, box-shadow 0.3s ease;
 }
 .contact-form input[type="date"]:hover,
 .contact-form select:hover {
@@ -317,7 +241,6 @@ body.contact-page {
 .contact-form input[type="tel"] {
   margin-bottom: 20px;
 }
-
 input[type="radio"] {
   width: auto;
   margin-right: 0.3rem;
@@ -371,63 +294,101 @@ input[type="radio"] {
 #specific-date {
   margin-bottom: 10px;
 }
-
 #general-timeframe {
   margin-bottom: 25px;
 }
-
 .radio-group label,
 .contact-form fieldset label {
   display: block;
   margin-bottom: 10px;
   padding-left: 5px;
 }
-
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  position: absolute;
+  top: 0; /* Position label at the top */
+  left: 0.8rem;
+  font-size: 14px;
+  color: #666;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 0.25rem;
+  pointer-events: none;
+}
+.form-group input {
+  width: 100%;
+  padding-top: 30px; /* Create space below label for user text */
+  padding-left: 0.8rem;
+  font-size: 16px; 
+  font-weight: bold; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 .contact-form button.submit-button {
   padding: 12px;
   background-color: #5a9a6a;
   color: #ffffff;
   font-size: 1rem;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
   box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
     0 0 0 -0.6em rgba(13, 109, 253, 0.7); /* Initial shadow */
 }
-
 .contact-form button.submit-button:hover {
   background-color: #3a8450;
   box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(13, 109, 253, 0.7); /* Hover shadow */
   opacity: 0.7;
 }
-
 .contact-form button.submit-button:focus-visible {
   box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(13, 109, 253, 0.7);
 }
-
 .contact-form button.submit-button:focus {
   outline: none;
 }
 
-@font-face {
-  font-family: "Scriptina";
-  src: url("../fonts/scriptina.ttf") format("truetype");
-}
-
 .signature {
-  font-family: "Scriptina", cursive;
-  font-size: 2rem;
+  font-family: "Allison", cursive;
+  font-size: 2.5rem;
   margin-top: -10px;
   text-align: right;
   line-height: 1;
 }
 
-/* Media queries for smaller screens */
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: small;
+  line-height: 0.9;
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.8);
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/* .footer-nav li:not(:last-child)::after {
+  content: "|";
+  margin-left: 1.25rem;
+} */
+
 
 /* Media queries for smaller screens */
-
 @media (max-width: 768px) {
   .about-section {
     gap: 30px;
@@ -435,7 +396,6 @@ input[type="radio"] {
   .about-img {
     max-width: 100%;
   }
-
   .contact-container {
     display: flex;
     flex-direction: column;
@@ -454,13 +414,10 @@ input[type="radio"] {
     display: block;
     margin-bottom: 20px;
   }
-}
-.contact-image {
-  max-width: 100%; /* Prevents the image from exceeding the width of its container */
-  width: auto;
-  height: auto; /* Maintains aspect ratio */
-  max-height: 300px;
-  object-fit: contain;
+  .contact-image {
+    max-width: 100%;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -472,8 +429,8 @@ input[type="radio"] {
     padding: 5px;
     transform: none;
   }
-
   .item img {
+    max-width: 100%;
     width: 100%;
     height: auto;
     object-fit: cover;

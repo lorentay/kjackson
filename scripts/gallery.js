@@ -407,11 +407,11 @@ const photos = [
     alt: "A close-up shot of a groom's hand on his hip, showing his wedding ring",
     orientation: "horizontal",
   },
-  {
-    src: "images/lee-family-tree.jpeg",
-    alt: "",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/lee-family-tree.jpeg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/lindsay-louis-engagement.jpeg",
     alt: "",
@@ -566,11 +566,11 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  {
-    src: "images/snowmageddon-with-maggie.jpeg",
-    alt: "",
-    orientation: "vertical",
-  },
+  // {
+  //   src: "images/snowmageddon-with-maggie.jpeg",
+  //   alt: "",
+  //   orientation: "vertical",
+  // },
   {
     src: "images/cara-in-red-laughing.jpeg",
     alt: "",
@@ -640,19 +640,14 @@ photos.forEach((photo, index) => {
   item.className = `item ${photo.orientation} mosaic-item${index + 1}`;
 
   // If the photo is a superstar, add an additional class for styling
-  if (photo.isSuperstar) {
-    item.classList.add("horizontal-superstar");
-  }
+  // if (photo.isSuperstar) {
+  //   item.classList.add("horizontal-superstar");
+  // }
 
   const img = document.createElement("img");
   img.src = photo.src;
   img.alt = photo.alt;
   img.loading = "lazy"; 
-
-  // Apply object-fit based on the orientation
-  // img.style.objectFit =
-  //   photo.fit || (photo.orientation === "horizontal" ? "cover" : "contain");
-
   item.appendChild(img);
   galleryContainer.appendChild(item);
 });
