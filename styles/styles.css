@@ -155,7 +155,7 @@ body.contact-page {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px)
 }
 .contact-section {
   background-color: rgba(255, 255, 255, 0.8);
@@ -181,7 +181,7 @@ body.contact-page {
   max-width: 100%;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 .profile-photo:hover {
@@ -382,10 +382,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-/* .footer-nav li:not(:last-child)::after {
-  content: "|";
-  margin-left: 1.25rem;
-} */
 
 
 /* Media queries for smaller screens */
