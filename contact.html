@@ -60,7 +60,7 @@
 
           <!-- Form -->
           <form class="contact-form">
-            <div class="form-group">
+            <div class="form-group label">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required />
               <!-- <label for="name">Name</label> -->
@@ -77,9 +77,10 @@
                 title="Please enter a valid email address, e.g., name@example.com"
               />
             </div>
-
-            <label for="phone">Phone Number (optional)</label>
-            <input type="tel" id="phone" name="phone" />
+            <div class="form-group">
+              <label for="phone">Phone Number (optional)</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
 
             <fieldset class="contact-method-radio">
               <legend>Preferred Contact Method</legend>
