@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 html,
@@ -13,13 +14,11 @@ body {
   background-color: #f4f4f4;
   line-height: 1.5;
 }
-
 main {
   flex-grow: 1;
   margin-top: 6.25rem;
   padding: 1.25rem;
 }
-
 header {
   position: fixed;
   top: 0;
@@ -29,10 +28,9 @@ header {
   padding: 0.625rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.8);
-  color: #333;
   line-height: 1.5;
   margin-bottom: 1.5rem;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
 }
 
 h1,
@@ -40,10 +38,31 @@ h2 {
   font-family: "Alegreya Sans", sans-serif;
   /* font-family: "Roboto Mono", monospace; */
   margin: 0;
-  font-weight: 400;
 }
 h2 {
   font-size: 1.75rem;
+}
+h1 {
+  color: #4d855b;
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-variant: small-caps;
+  margin-bottom: -25px;
+}
+
+.hyatt {
+  font-family: "Meow Script", cursive;
+  font-size: 2.25rem;
+  font-variant: normal;
+}
+.photography {
+  color: #42517a;
+  font-weight: 500;
+}
+.tag-line {
+  color: #42517a;
+  font-style: italic;
+  margin-bottom: 20px;
 }
 
 nav ul {
@@ -56,11 +75,17 @@ nav ul li {
   margin: 0 0.938rem;
 }
 nav ul li a {
-  color: #333;
   text-decoration: none;
+  color: #2d3748; /* Dark blue */
+  /* transition: color 0.3s ease; */
+  font-weight: normal;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 nav ul li a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #2d3748; 
+  font-weight: bold;
+  /* text-shadow: 0 0.15rem 0.2rem rgba(0, 0, 0, 0.3); */
 }
 
 /* grid styles for Home the Home page */
@@ -69,16 +94,18 @@ nav ul li a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.625rem;
   max-width: 75rem;
-  margin: 0 auto;
+  margin: 2.5rem auto 0 auto;
   padding-top: 1.25rem;
 }
+
 .item {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
   border-radius: 0.313rem;
   padding: 0.625rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   background: rgba(255, 255, 255, 0.08);
 }
+
 .item img {
   max-width: 100%;
   height: auto;
@@ -97,7 +124,7 @@ nav ul li a:hover {
 }
 .item:hover {
   transform: scale(1.01);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 0.8 rgba(0, 0, 0, 0.3);
 }
 
 /* styles for the About page */
@@ -114,7 +141,7 @@ nav ul li a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   max-width: 100%;
-  margin-left: 60px;
+  margin-left: 3.75rem;
   padding-top: 9.375rem;
   padding-bottom: 9.375rem;
 }
@@ -130,7 +157,7 @@ nav ul li a:hover {
   padding: 0.625rem;
   background: rgba(255, 255, 255, 0.7);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 .initial-cap {
   font-size: 2.5rem;
@@ -152,7 +179,7 @@ nav ul li a:hover {
 }
 .about-page .item:hover {
   transform: scale(1.01);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .top-right-image {
   grid-column: 3 !important;
@@ -213,7 +240,7 @@ body.contact-page {
   border-radius: 0.313rem;
   max-width: 56.25rem;
   margin: 3.125rem auto 1.25rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .contact-container {
   display: flex;
@@ -236,7 +263,7 @@ body.contact-page {
 }
 .profile-photo:hover {
   transform: scale(1.01);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
 .contact-form {
   width: 60%;
@@ -267,7 +294,7 @@ body.contact-page {
 .contact-form input[type="tel"]:hover,
 .contact-form textarea:hover {
   outline: 0.094rem solid #5a9a6a;
-  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3);
+  box-shadow: 0 0 0.3rem rgba(90, 154, 106, 0.3);
 }
 .contact-form input[type="date"],
 .contact-form select {
@@ -281,7 +308,7 @@ body.contact-page {
 .contact-form input[type="date"]:hover,
 .contact-form select:hover {
   outline: 0.125rem solid #5a9a6a;
-  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3);
+  box-shadow: 0 0 0.3rem rgba(90, 154, 106, 0.3);
 }
 .contact-form input:not([type="checkbox"]), /* :not prevents the checkboxes from effects of padding on other elements */
 .contact-form select,
@@ -313,7 +340,7 @@ input[type="radio"] {
 }
 .contact-method-radio:hover {
   border-color: #5a9a6a;
-  box-shadow: 0 0 5px rgba(9, 154, 106, 0.3);
+  box-shadow: 0 0 0.3rem rgba(9, 154, 106, 0.3);
 }
 .contact-form fieldset {
   margin-bottom: 1.25rem;
@@ -325,7 +352,7 @@ input[type="radio"] {
 }
 .checkbox-fieldset:hover {
   border-color: #5a9a6a;
-  box-shadow: 0 0 5px rgba(90, 154, 106, 0.3);
+  box-shadow: 0 0 0.3rem rgba(90, 154, 106, 0.3);
 }
 .contact-form textarea {
   margin-bottom: 0.625rem; /* Adds space below the textarea */

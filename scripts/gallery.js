@@ -81,12 +81,11 @@ const photos = [
     alt: "",
     orientation: "horizontal",
   },
-//   {
-//   src: "images/amberjeff-engagement-hands.jpeg",
-//   alt: "",
-//   orientation: "horizontal",
-// },
-
+  //   {
+  //   src: "images/amberjeff-engagement-hands.jpeg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  // },
 
   {
     src: "images/jennys-7th-anniversary1.jpg",
@@ -173,7 +172,7 @@ const photos = [
     alt: "",
     orientation: "vertical",
   },
-  
+
   {
     src: "images/bride-with-pearls-in-black-and-white.jpeg",
     alt: "",
@@ -639,16 +638,14 @@ photos.forEach((photo, index) => {
   const item = document.createElement("div");
   item.className = `item ${photo.orientation} mosaic-item${index + 1}`;
 
-  // If the photo is a superstar, add an additional class for styling
-  // if (photo.isSuperstar) {
-  //   item.classList.add("horizontal-superstar");
-  // }
-
   const img = document.createElement("img");
   img.src = photo.src;
   img.alt = photo.alt;
-  img.loading = "lazy"; 
+
+  // Apply lazy loading only for images after the first 10
+  if (index >= 10) {
+    img.loading = "lazy";
+  }
   item.appendChild(img);
   galleryContainer.appendChild(item);
 });
-
