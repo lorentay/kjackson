@@ -230,10 +230,11 @@ nav ul li a:hover {
 
 /* contact page styles */
 body.contact-page {
-  display: flex;
-  flex-direction: column;
+  
 }
 body.contact-page {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.4),
       rgba(255, 255, 255, 0.4)
