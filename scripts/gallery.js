@@ -60,11 +60,11 @@ const photos = [
     alt: "A blonde bride",
     orientation: "vertical",
   },
-  {
-    src: "images/amberjeff-engagement-close.jpeg",
-    alt: "",
-    orientation: "horizontal",
-  },
+  // {
+  //   src: "images/amberjeff-engagement-close.jpeg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  // },
   {
     src: "images/amberjeff-engagement-train-station.jpeg",
     alt: "",
@@ -230,11 +230,11 @@ const photos = [
     orientation: "horizontal",
     fit: "contain",
   },
-  {
-    src: "images/anna-ruth-violin-red-couch-close.jpg",
-    alt: "",
-    orientation: "horizontal",
-  },
+  // {
+  //   src: "images/anna-ruth-violin-red-couch-close.jpg",
+  //   alt: "",
+  //   orientation: "horizontal",
+  // },
   {
     src: "images/amber-snow-red-boa.jpeg",
     alt: "",
@@ -360,8 +360,8 @@ const photos = [
   {
     src: "images/ligia-claudiu-bouquet-kiss.jpeg",
     alt: "",
-    orientation: "horizontal",
-    fit: "contain",
+    orientation: "vertical",
+    // fit: "contain",
   },
   {
     src: "images/looking-fancy-white-car.jpeg",
@@ -524,10 +524,21 @@ photos.forEach((photo, index) => {
   img.src = photo.src;
   img.alt = photo.alt;
 
+
   // Apply lazy loading only for images after the first 10
   if (index >= 10) {
     img.loading = "lazy";
   }
+
+  // Apply object-fit dynamically based on the `fit` property
+  if (photo.fit) {
+    img.style.objectFit = photo.fit; // Assign "contain" or "cover" dynamically
+  } else {
+    // Optional: provide a fallback fit if `fit` is not defined in the array
+    img.style.objectFit = photo.orientation === "horizontal" ? "contain" : "cover";
+  }
+
+
   item.appendChild(img);
   galleryContainer.appendChild(item);
 });
