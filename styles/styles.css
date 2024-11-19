@@ -14,7 +14,6 @@ body {
   line-height: 1.5;
 }
 main {
-  /* flex-grow: 1; */
   margin-top: 6.25rem;
   padding: 2rem 1.25rem;
 }
@@ -94,7 +93,11 @@ nav ul li a:hover {
 }
 
 /* grid styles for the Home page */
-.mosaic {
+
+.home-page {
+  background-color: #cfd6cf;
+}
+.home-page .mosaic {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(14rem, auto);
@@ -102,6 +105,7 @@ nav ul li a:hover {
   max-width: 75rem;
   margin: 2.5rem auto 0 auto;
   padding-top: 1.25rem;
+  background-color: #cfd6cf;
 }
 
 .item {
@@ -109,7 +113,7 @@ nav ul li a:hover {
   border-radius: 0.313rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.5);
 }
 .item img {
   max-width: 100%;
@@ -140,8 +144,7 @@ nav ul li a:hover {
 
 /* styles for the About page */
 .about-page {
-  background-color: lightcyan;
-
+  background-color: #cfd6cf;
   background-image: url("../images/yellow-umbrella4.jpeg");
   background-size: cover;
   background-position: center;
@@ -165,6 +168,7 @@ nav ul li a:hover {
   align-self: start;
   background-color: rgba(255, 255, 255, 0.2);
   text-align: left;
+  margin-top: 1rem;
 }
 .about-page .item {
   border-radius: 0.313rem;
@@ -207,33 +211,93 @@ nav ul li a:hover {
 .text-box-1 {
   align-self: start;
   grid-column: 1 / span 2;
-  margin-top: 4rem;
   margin-bottom: 1.5rem;
+  position: relative;
+  padding: 1.5rem 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.text-box-1 p {
+  margin-right: 12rem;
+}
+.text-box-1 img.about-me-photo {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 .text-box-2 {
-  grid-column: 2 / span 3;
+  grid-column: 1 / span 2;
   grid-row: 3;
-  margin-right: 12%;
   margin-bottom: 1rem;
 }
 .text-box-3 {
-  grid-column: 1 / span 2;
-  grid-row: 6;
-  margin-bottom: 1rem;
+  grid-column: 2;
+  grid-row: 3;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7); 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: left;
 }
 .umbrella1 {
   grid-column: 1;
-  grid-row: 6;
-  max-width: 85%;
+  grid-row: 3;
+  max-width: 90%;
+  margin: auto;
+  border-radius: 0.5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  align-self: center;
 }
 .call-to-action {
-  grid-column: 2 / span 3;
-  grid-row: 7;
-  margin-top: 4%;
+  grid-column: 1 / span 2;
+  grid-row: 4;
   margin-right: 12%;
   margin-left: -3.125rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem; 
+  margin: 1rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7); 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  text-align: left;
 }
+.call-to-action button {
+  display: block;
+  margin: 1rem auto 0 auto;
+  width: auto; 
+  padding: 0.75rem 1.5rem; 
+  background-color: rgba(13, 109, 253, 0.7); 
+  color: #ffffff; 
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.313rem; 
+  cursor: pointer; 
+  font-weight: bold;
+  transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
+  box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
+    0 0 0 -0.6em rgba(90, 154, 106, 0.7);
+}
+.call-to-action button:hover {
+  background-color: #004db7; /* Darker blue on hover */
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7); /* Green hover shadow */
+  opacity: 0.85; /* Slight transparency on hover */
+}
+.call-to-action button:focus-visible {
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7); /* Green focus shadow */
+}
+.call-to-action button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+
 
 /* contact page styles */
 body.contact-page {
@@ -560,7 +624,7 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
-  .mosaic {
+  .home-page .mosaic {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
@@ -574,5 +638,10 @@ footer a:hover {
     height: auto;
     object-fit: cover;
   }
+  @media (max-width: 600px) {
+    .text-box-1 img.about-me-photo {
+      width: 150px; /* Reduce size */
+      height: 150px; /* Maintain proportions */
+    }
 }
 
