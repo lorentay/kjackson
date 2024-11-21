@@ -164,10 +164,9 @@ nav ul li a:hover {
   position: relative;
 }
 .about-heading h2 {
-  grid-column: 1 / span 3;
-  align-self: start;
-  text-align: left;
-  margin-top: 1rem;
+  font-size: 1.75rem;
+  margin-left: 3.75rem;
+  padding-top: 1rem;
 }
 .about-page .item {
   border-radius: 0.313rem;
@@ -198,15 +197,6 @@ nav ul li a:hover {
   transform: scale(1.01);
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-.top-right-image {
-  grid-column: 3 !important;
-  grid-row: 2 !important;
-  max-width: 80%;
-}
-.bottom-left-image {
-  grid-column: 1;
-  grid-row: 1 / span 1;
-}
 .text-box-1 {
   align-self: start;
   grid-column: 1 / span 2;
@@ -233,7 +223,7 @@ nav ul li a:hover {
 }
 .text-box-2 {
   grid-column: 1 / span 2;
-  grid-row: 3;
+  grid-row: 2;
   margin-bottom: 1rem;
 }
 .text-box-3 {
@@ -245,6 +235,13 @@ nav ul li a:hover {
   border-radius: 0.5rem; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-align: left;
+}
+.signature {
+  font-family: "Allison", cursive;
+  font-size: 2.5rem;
+  margin-top: -0.625rem;
+  text-align: right;
+  line-height: 1;
 }
 .umbrella1 {
   grid-column: 1;
@@ -316,34 +313,23 @@ body.contact-page {
   margin-top: 0; 
   padding-top: 0; 
 }
-
 .contact-page header {
   position: relative;
-  margin-bottom: 0;
-  padding: bottom 0;
 }
-
-.contact-page .contact-heading {
-  /* margin: -135px auto 1rem; */
-  margin: 0 auto 1rem;
-  max-width: 75rem;
-  text-align: left;
-  /* align-self: flex-start; */
-  padding-top: 2rem
-}
-.contact-page .contact-heading h2 {
+.contact-heading h2 {
   font-size: 1.75rem;
-  margin-left: 1.71rem;
+  margin-left: 3rem;
+  padding-top: 1rem;
 }
 .contact-section {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0;
+  padding: 2rem;
   border-radius: 0.313rem;
   max-width: 75rem;
-  margin: 2rem auto;
+  margin: 0 3rem 0;
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
 }
-.contact-page .contact-container {
+.contact-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -351,38 +337,23 @@ body.contact-page {
   margin: 0;
   padding: 0;
 }
-
-.contact-page .contact-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Spreads child elements */
-  max-width: 75rem; /* Aligns with page layout */
-  padding: 2rem;
-  margin: 0 auto;
-  gap: 1.5rem; /* Adds spacing between flex items */
-}
-
 .contact-info {
   width: 30%;
   text-align: left;
-  /* padding-left: 1.25rem; */
-}
-.contact-me {
   padding-left: 1.25rem;
 }
-
-.contact-page .profile-photo {
+.contact-page .contact-photo {
   max-width: 80%;
   display: block;
   margin: 0 auto;
   /* height: 200px;
   /* width: 200px;  */
-  object-fit: cover; */
+  object-fit: cover; 
   border-radius: 5px;
   border: 0.125rem solid rgba(0, 0, 0, 0.1);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.profile-photo:hover {
+.contact-photo:hover {
   transform: scale(1.01);
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
 }
@@ -393,7 +364,7 @@ body.contact-page {
 }
 .contact-form fieldset label {
   cursor: pointer;
-  padding: 0.5em; /* Adjust padding as needed */
+  padding: 0.5em; 
   display: inline-block; /* Ensures padding applies around the text */
 }
 .contact-form input[type="text"],
@@ -550,13 +521,6 @@ input[type="radio"] {
   outline: none;
 }
 
-.signature {
-  font-family: "Allison", cursive;
-  font-size: 2.5rem;
-  margin-top: -0.625rem;
-  text-align: right;
-  line-height: 1;
-}
 
 /* Footer styles */
 footer {
