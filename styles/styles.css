@@ -14,7 +14,7 @@ body {
   line-height: 1.5;
 }
 main {
-  margin-top: 6.25rem;
+  margin-top: 1.75em;
   padding: 2rem 1.25rem;
 }
 
@@ -35,6 +35,9 @@ header {
   margin-bottom: 0;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+}
+.home-page header {
+  position: relative;
 }
 
 h1,
@@ -81,12 +84,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #2d3748; /* Dark blue */
+  color: #2d3748; 
   font-weight: normal;
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 nav ul li a:hover {
-  /* text-decoration: underline; */
   color: #2d3748;
   font-weight: bold;
   /* text-shadow: 0 0.15rem 0.2rem rgba(0, 0, 0, 0.3); */
@@ -103,8 +105,8 @@ nav ul li a:hover {
   grid-auto-rows: minmax(14rem, auto);
   gap: 0.625rem;
   max-width: 75rem;
-  margin: 2.5rem auto 0 auto;
-  padding-top: 1.25rem;
+  /* margin: 0 auto 0 auto; */
+  /* padding-top: 1.25rem; */
   background-color: #cfd6cf;
 }
 
