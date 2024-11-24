@@ -13,21 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Allison&family=Antic+Slab&family=Meow+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/k-browser-tab.png" />
 
-    <title>Kimberly Jackson Photography</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body class="contact-page">
-    <header>
-      <h1>
-        kimberly<span class="hyatt">Hyatt</span>&nbsp;&nbsp;jackson
-        <span class="photography">photography</span>
-      </h1>
-      <p class="tag-line">
-        Cherished moments, timeless portraits, heirloom prints
-      </p>
+    <header class="page-header">
+      <h1>Contact</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -37,21 +32,27 @@
       </nav>
     </header>
     <main>
-      <div class="contact-heading">
-        <h2>Contact Me</h2>
-      </div>
       <div class="contact-section">
+        <div class="contact-heading">
+          <h2>Let's Get In Touch!</h2>
+          <p>
+            I'm here for your most memorable
+            moments.
+          </p>
+        </div>
+    
+
         <div class="contact-content">
           <div class="contact-info">
-            <p>
-              Local to the Seattle area, I'm here for your most memorable
-              moments.
-            </p>
-            <img
+            <h3>Location</h3>   
+            <p>Seattle, WA, USA</p>
+            <!-- <img
               src="images/kimberly-camera-only.jpeg"
               alt="Lifestyle shot"
               class="contact-photo"
-            />
+            /> -->
+            <h3>Email</h3>
+            <a href="mailto:hyajack@msn.com">kimberly@kimberlyhyattjackson.com</a>
           </div>
 
           <form class="contact-form">
@@ -75,83 +76,18 @@
               <label for="phone">Phone Number (optional)</label>
               <input type="tel" id="phone" name="phone" />
             </div>
-
-            <fieldset class="contact-method-radio">
-              <legend>Preferred Contact Method</legend>
-              <label
-                ><input
-                  type="radio"
-                  name="contact-method"
-                  value="email"
-                  required
-                />
-                Email</label
-              >
-              <label
-                ><input type="radio" name="contact-method" value="text" />
-                Text</label
-              >
-              <label
-                ><input type="radio" name="contact-method" value="phone-call" />
-                Phone</label
-              >
-            </fieldset>
-
-            <fieldset class="checkbox-fieldset">
-              <legend class="checkbox-heading">
-                I'm interested in the following (select all that apply):
-              </legend>
-              <label
-                ><input type="checkbox" name="services" value="portraits" />
-                Individual and Group Portraits</label
-              >
-              <label
-                ><input type="checkbox" name="services" value="bridal" /> Bridal
-                Photography</label
-              >
-              <label
-                ><input type="checkbox" name="services" value="wedding" />
-                Wedding Photography</label
-              >
-              <label
-                ><input type="checkbox" name="services" value="events" /> Event
-                Photography</label
-              >
-              <label
-                ><input type="checkbox" name="services" value="albums" /> Custom
-                Heirloom Albums</label
-              >
-              <label
-                ><input type="checkbox" name="services" value="cards" />
-                Greeting and Thank-You Cards</label
-              >
-            </fieldset>
-
-            <label for="comments"
-              >Tell me more about what you're looking for:</label
-            >
-            <textarea
-              id="comments"
-              name="comments"
-              rows="4"
-              placeholder="750 characters maximum"
-              maxlength="750"
-            ></textarea>
-
-            <p>
-              Do you need it by a specific date? If so, please select from the
-              following:
-            </p>
-            <input type="date" id="specific-date" name="specific-date" />
-
-            <p>Or choose a general timeframe:</p>
-            <select id="general-timeframe" name="general-timeframe">
-              <option value="" disabled selected>Select timeframe</option>
-              <option value="next-month">1-2 months</option>
-              <option value="3-6-months">3-6 months</option>
-              <option value="flexible">I'm flexible</option>
-            </select>
-
+            
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                maxlength="750"
+                placeholder="Type your message here..."></textarea>
+            </div>
+                        
+    
             <button type="submit" class="submit-button">Submit</button>
           </form>
         </div>

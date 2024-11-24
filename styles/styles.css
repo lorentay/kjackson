@@ -9,7 +9,8 @@ body {
 }
 
 body {
-  font-family: "Antic Slab", serif;
+  /* font-family: "Antic Slab", serif; */
+  font-family: "Alegreya Sans", sans-serif;  
   background-color: #f4f4f4;
   line-height: 1.5;
 }
@@ -41,13 +42,21 @@ header {
 }
 
 h1,
-h2 {
-  font-family: "Alegreya Sans", sans-serif;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Alegreya Sans", sans-serif; */
   /* font-family: "Roboto Mono", monospace; */
-  margin: 0;
+  font-family: "libre Caslon Display", serif;
+  /* margin: 0; */
 }
 h2 {
   font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 h1 {
   color: #4d855b;
@@ -59,55 +68,79 @@ h1 {
 
 .hyatt {
   font-family: "Meow Script", cursive;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-variant: normal;
 }
 .photography {
   color: #42517a;
-  font-weight: 500;
+  font-weight: 700;
 }
-.tag-line {
+/* .tag-line {
   color: #42517a;
   font-style: italic;
   margin-bottom: 2rem;
-}
+} */
+
+/* nav {
+  position: absolute; use if I want to reposition the menu
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+} */
 
 nav ul {
+  /* display: flex; use if I want to reposition the menu*/
   list-style-type: none;
+  /* margin: 0;  use if I want the menu above the header*/
   padding: 0;
   font-family: "Alegreya Sans", sans-serif;
   font-variant: small-caps;
 }
-nav ul li {
+nav li {
   display: inline;
   margin: 0 0.938rem;
 }
-nav ul li a {
+nav a {
   text-decoration: none;
-  color: #2d3748; 
+  color: #2d3748;
   font-weight: normal;
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
-nav ul li a:hover {
+nav a:hover {
   color: #2d3748;
   font-weight: bold;
   /* text-shadow: 0 0.15rem 0.2rem rgba(0, 0, 0, 0.3); */
 }
 
+#ScrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4d855b;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 /* grid styles for the Home page */
 
-.home-page {
-  background-color: #cfd6cf;
-}
 .home-page .mosaic {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(14rem, auto);
   gap: 0.625rem;
   max-width: 75rem;
-  /* margin: 0 auto 0 auto; */
-  /* padding-top: 1.25rem; */
-  background-color: #cfd6cf;
+  background-color: #f0f0f0;
+  /* background-color: #cfd6cf; */
 }
 
 .item {
@@ -115,7 +148,7 @@ nav ul li a:hover {
   border-radius: 0.313rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
 }
 .item img {
   max-width: 100%;
@@ -145,10 +178,12 @@ nav ul li a:hover {
 }
 
 /* styles for the About page */
+
 .about-page {
-  background-color: #cfd6cf;
+  /* background-color: #cfd6cf; */
+  background-color: #f0f0f0;
   background-image: url("../images/yellow-umbrella4.jpeg");
-  background-size: cover;
+  background-size: 93%;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -219,7 +254,7 @@ nav ul li a:hover {
   width: 175px;
   height: 175px;
   border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.1); 
+  border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }
@@ -233,8 +268,8 @@ nav ul li a:hover {
   grid-row: 3;
   margin: 1rem 0;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.7); 
-  border-radius: 0.5rem; 
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
@@ -251,7 +286,7 @@ nav ul li a:hover {
   max-width: 90%;
   margin: auto;
   border-radius: 0.5;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   align-self: center;
 }
 .call-to-action {
@@ -259,72 +294,91 @@ nav ul li a:hover {
   grid-row: 4;
   margin-right: 12%;
   margin-left: -3.125rem;
-  margin-bottom: 2.5rem; 
+  margin-bottom: 2.5rem;
   margin: 1rem 0;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.7); 
-  border-radius: 0.5rem; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
 .call-to-action button {
   display: block;
   margin: 0 auto 1rem auto;
-  width: auto; 
-  padding: 0.75rem 1.5rem; 
-  background-color: rgba(13, 109, 253, 0.7); 
-  color: #ffffff; 
+  width: auto;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(13, 109, 253, 0.7);
+  color: #ffffff;
   font-size: 1rem;
   border: none;
-  border-radius: 0.313rem; 
-  cursor: pointer; 
+  border-radius: 0.313rem;
+  cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
   box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
     0 0 0 -0.6em rgba(90, 154, 106, 0.7);
 }
 .call-to-action button:hover {
-  background-color: #004db7; 
-  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7); 
+  background-color: #004db7;
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7);
   opacity: 0.85; /* Slight transparency on hover */
 }
 .call-to-action button:focus-visible {
-  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7); 
+  box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7);
 }
 .call-to-action button:focus {
-  outline: none; 
+  outline: none;
 }
 
-
 /* Contact page styles */
+
+/* .contact-page .page-header {
+  background-image: url("../images/amber-jeff-wedding-bands.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  background-repeat: no-repeat;
+  color: white;
+} */
 
 body.contact-page {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
-    ),
-    url("../images/amber-jeff-wedding-bands.jpg");
-  background-size: cover;
+  /* background-color: #cfd6cf; */
+  background-color: #f0f0f0;
+  background-image: url("../images/amber-jeff-wedding-bands.jpg");
+  background-size: 93%;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .contact-page main {
-  margin-top: 0; 
-  padding-top: 0; 
+  margin-top: 3rem;
+  padding-top: 0;
 }
 .contact-page header {
   position: relative;
 }
 .contact-heading h2 {
   font-size: 1.75rem;
-  margin-left: 3rem;
-  padding-top: 1rem;
+  margin-bottom: -1rem;
+}
+.contact-info h3 {
+  margin-bottom: -1rem;
+}
+.contact-info a {
+  text-decoration: none;
+  color: inherit;
+  margin-top: 1rem;
+  display: block;
+}
+.contact-info a:hover {
+  text-decoration: underline;
+  color:#4d855b;
+  font-weight: bold;
 }
 .contact-section {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 2rem;
   border-radius: 0.313rem;
   max-width: 75rem;
@@ -338,22 +392,6 @@ body.contact-page {
   margin: 0;
   padding: 0;
 }
-.contact-info {
-  max-width: 30%;
-  text-align: left;
-  padding-left: 1.25rem;
-}
-.contact-photo {
-  max-width: 80%;
-  margin: 0 auto;
-  border-radius: 8px;
-  border: 0.125rem solid rgba(0, 0, 0, 0.1);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.contact-photo:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.2);
-}
 .contact-form {
   width: 60%;
   display: flex;
@@ -361,8 +399,11 @@ body.contact-page {
 }
 .contact-form fieldset label {
   cursor: pointer;
-  padding: 0.5em; 
-  display: inline-block; /* Ensures padding applies around the text */
+  padding: 0.5em;
+  /* display: inline-block; */
+  /* display: block; */
+  /* margin-bottom: 0.938rem ; */
+
 }
 .contact-form input[type="text"],
 .contact-form input[type="email"],
@@ -371,10 +412,12 @@ body.contact-page {
   padding: 0.5rem;
   text-align: left;
   cursor: pointer;
-  margin-bottom: 1.25rem;
   border: 0.125rem solid #ccc;
   border-radius: 0.375rem;
+  font-family: inherit;
   font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
   height: 3.75rem;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -385,83 +428,12 @@ body.contact-page {
   outline: 0.094rem solid #5a9a6a;
   box-shadow: 0 0 0.3rem rgba(90, 154, 106, 0.3);
 }
-.contact-form input[type="date"],
-.contact-form select {
-  max-width: 100%;
-  min-width: 15.625rem;
-  width: 100%;
-  border: 0.125rem solid #ccc;
-  border-radius: 0.313rem;
-  transition: outline 0.3s ease, box-shadow 0.3s ease;
-}
-.contact-form input[type="date"]:hover,
-.contact-form select:hover {
-  outline: 0.125rem solid #5a9a6a;
-  box-shadow: 0 0 0.3rem rgba(90, 154, 106, 0.3);
-}
-.contact-form input:not([type="checkbox"]), /* :not prevents the checkboxes from effects of padding on other elements */
-.contact-form select,
-.contact-form textarea {
-  height: 3.75rem;
-}
 .contact-form input[type="tel"] {
   margin-bottom: 1.25rem;
 }
-input[type="radio"] {
-  width: auto;
-  margin-right: 0.3rem;
-  margin-left: 0.3rem;
-  margin-top: -0.063rem;
-  vertical-align: middle;
-}
-.contact-method-radio {
-  display: flex;
-  align-items: center;
-  border: 0.125rem solid #ccc;
-  padding: 0 0.625rem;
-  gap: 0.938rem;
-  border-radius: 0.313rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-.contact-method-radio label {
-  margin-right: 1.6rem;
-  color: #3d3d3d;
-}
-.contact-method-radio:hover {
-  border-color: #5a9a6a;
-  box-shadow: 0 0 0.3rem rgba(9, 154, 106, 0.3);
-}
-.contact-form fieldset {
-  margin-bottom: 1.25rem;
-}
-.checkbox-fieldset {
-  border: 0.125rem solid #ccc;
-  border-radius: 0.313rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-.checkbox-fieldset:hover {
-  border-color: #5a9a6a;
-  box-shadow: 0 0 0.3rem rgba(90, 154, 106, 0.3);
-}
-.contact-form textarea {
-  margin-bottom: 0.625rem; /* Adds space below the textarea */
-}
+
 .contact-form p {
   margin-bottom: 0.313rem;
-}
-.contact-form fieldset label {
-  display: block;
-  margin-bottom: 0.938rem !important;
-}
-.checkbox-heading {
-  margin-left: 0.313rem;
-  margin-bottom: 0.625rem;
-}
-#specific-date {
-  margin-bottom: 0.625rem;
-}
-#general-timeframe {
-  margin-bottom: 1.563rem;
 }
 .radio-group label,
 .contact-form fieldset label {
@@ -473,25 +445,62 @@ input[type="radio"] {
   position: relative;
   margin-bottom: 1.5rem;
 }
+.form-group textarea {
+  padding-top: 1.5rem; /* Add space for the label inside the textarea */
+}
+
+.form-group textarea + label {
+  top: 0.5rem; /* Adjust label position */
+}
 .form-group label {
   position: absolute;
-  display: block;
   top: 0;
-  left: 0.7rem;
-  font-size: 0.875rem;
+  left: 0.75rem;
+  /* font-size: 0.875rem; */
+  font-size: 1rem;
   color: #666;
   margin-top: 0.5rem;
   pointer-events: none;
   line-height: 1;
+  transition: 0.2s ease all;
   background-color: rgba(255, 255, 255, 0.6);
 }
 .form-group input {
   width: 100%;
   font-size: 1rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   border: 0.063rem solid #ccc;
   border-radius: 0.313rem;
 }
+/* .contact-form textarea {
+  padding: 1.5rem 0.5rem 0.5rem; /* Add extra top padding for the label */
+  font-size: 1rem; /* Match the inputs */
+  line-height: 1.5; /* Consistent spacing */
+  width: 100%; /* Ensure it stretches the full width */
+  min-height: 6rem; /* Give a reasonable height for multiline input */
+} */
+
+.contact-form textarea {
+  width: 100%; /* Full width of the container */
+  padding: 0.5rem; /* Consistent padding around text */
+  font-size: 1rem; /* Match input font size */
+  font-family: inherit; /* Match the font of the page */
+  line-height: 1.5; /* Consistent line spacing */
+  border: 1px solid #ccc; /* Light border for clarity */
+  border-radius: 0.375rem; /* Rounded corners for better appearance */
+  resize: vertical; /* Allow user to resize vertically */
+  margin-bottom: 1rem; /* Spacing between fields */
+}
+
+.contact-form label {
+  display: block; /* Make the label stack above the textarea */
+  margin-bottom: 0.5rem; /* Add space below the label */
+  font-size: 1rem; /* Label font size */
+  color: #666; /* Neutral color for the label */
+}
+
+
+
 .contact-form button.submit-button {
   width: 100%;
   padding: 0.75rem 1.5rem;
@@ -517,7 +526,6 @@ input[type="radio"] {
 .contact-form button.submit-button:focus {
   outline: none;
 }
-
 
 /* Footer styles */
 footer {
@@ -546,96 +554,95 @@ footer a:hover {
 @media (max-width: 768px) {
   .about-page .mosaic {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 1rem; 
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
     margin: 0 auto;
     padding: 1rem;
-  } 
+  }
 
   .about-page .item,
   .top-right-image,
   .bottom-left-image {
-    width: 100%; 
-    max-width: 100%; 
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-  } 
+  }
 
   about-page .item img,
   .bottom-left-image img {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
-  }  
+  }
 
   .top-right-image {
     width: auto;
-    max-width: 60% !important; 
-    margin: 1rem auto; 
+    max-width: 60% !important;
+    margin: 1rem auto;
     padding: 0;
-  }  
+  }
 
   .top-right-image img {
     width: 100%;
     height: auto;
     display: block;
-  }  
+  }
   .text-box-1,
   .text-box-2,
   .text-box-3 {
     margin: 1rem auto;
-    text-align: center; 
-    padding: 1rem; 
+    text-align: center;
+    padding: 1rem;
     width: 100%;
   }
 
+  /* media-queries for contact page */
 
-  
-/* media-queries for contact page */
-
-.contact-page .contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  margin: auto;
-  width: 90%;
-  max-width: 25rem;
-}
-.contact-info,
-.contact-form {
-  width: 100%;
-  text-align: left;
-}
-.contact-form fieldset label {
-  display: block;
-  margin-bottom: 1.25rem;
-}
-.contact-image {
-  max-width: 100%;
-}
-
-@media (max-width: 600px) {
-  .home-page .mosaic {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
+  .contact-page .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+    width: 90%;
+    max-width: 25rem;
   }
-  .item {
-    padding: 0.313rem;
-    transform: none;
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    text-align: left;
   }
-  .item img {
+  .contact-form fieldset label {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+  .contact-image {
     max-width: 100%;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
   }
-  @media (max-width: 600px) {
-    .text-box-1 img.about-me-photo {
-      width: 150px; /* Reduce size */
-      height: 150px; /* Maintain proportions */
-    }
-}
 
+  @media (max-width: 600px) {
+    .home-page .mosaic {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    .item {
+      padding: 0.313rem;
+      transform: none;
+    }
+    .item img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    @media (max-width: 600px) {
+      .text-box-1 img.about-me-photo {
+        width: 150px; /* Reduce size */
+        height: 150px; /* Maintain proportions */
+      }
+    }
+  }
+}
