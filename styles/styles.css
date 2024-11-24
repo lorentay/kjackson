@@ -67,9 +67,12 @@ h1 {
 }
 
 .hyatt {
-  font-family: "Meow Script", cursive;
-  font-size: 2.5rem;
+  /* font-family: "Meow Script", cursive; */
+  font-family: "Send Flowers", cursive;
+  font-size: 2rem;
   font-variant: normal;
+  margin-left: -0.5rem;
+  margin-right: -0.4rem;
 }
 .photography {
   color: #42517a;
