@@ -27,12 +27,13 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="contact-section">
+      <section id="contact-section" class="contact-section">
         <div class="contact-heading">
           <h2>Let's Get In Touch!</h2>
           <p>
@@ -46,11 +47,6 @@
           <div class="contact-info">
             <h3>Location</h3>   
             <p>Seattle, WA, USA</p>
-            <!-- <img
-              src="images/kimberly-camera-only.jpeg"
-              alt="Lifestyle shot"
-              class="contact-photo"
-            /> -->
             <h3>Email</h3>
             <a href="mailto:hyajack@msn.com">kimberly@kimberlyhyattjackson.com</a>
           </div>
@@ -84,7 +80,7 @@
                 name="message"
                 rows="4"
                 maxlength="750"
-                placeholder="Type your message here..."></textarea>
+                placeholder="750 characters maximum"></textarea>
             </div>
                         
     
@@ -92,6 +88,7 @@
           </form>
         </div>
       </div>
+    </section>
     </main>
     <footer>
       <p>
@@ -99,17 +96,6 @@
         &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Seattle, WA
       </p>
     </footer>
-
-    <script>
-      document.getElementById("phone").addEventListener("input", function (e) {
-        let input = e.target.value.replace(/\D/g, ""); // Remove all non-numeric characters
-        if (input.length > 3 && input.length <= 6) {
-          input = input.replace(/^(\d{3})(\d+)/, "$1.$2"); // Format as 123.456
-        } else if (input.length > 6) {
-          input = input.replace(/^(\d{3})(\d{3})(\d+)/, "$1.$2.$3"); // Format as 123.456.7890
-        }
-        e.target.value = input;
-      });
-    </script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

@@ -10,7 +10,7 @@ body {
 
 body {
   /* font-family: "Antic Slab", serif; */
-  font-family: "Alegreya Sans", sans-serif;  
+  font-family: "Alegreya Sans", sans-serif;
   background-color: #f4f4f4;
   line-height: 1.5;
 }
@@ -48,9 +48,8 @@ h4,
 h5,
 h6 {
   /* font-family: "Alegreya Sans", sans-serif; */
-  /* font-family: "Roboto Mono", monospace; */
   font-family: "libre Caslon Display", serif;
-  /* margin: 0; */
+  font-variant: small-caps;
 }
 h2 {
   font-size: 1.75rem;
@@ -63,7 +62,7 @@ h1 {
   font-size: 2.5rem;
   font-weight: 400;
   font-variant: small-caps;
-  margin-bottom: -25px;
+  margin-bottom: 1.3rem;
 }
 
 .hyatt {
@@ -114,7 +113,6 @@ nav a:hover {
   font-weight: bold;
   /* text-shadow: 0 0.15rem 0.2rem rgba(0, 0, 0, 0.3); */
 }
-
 #ScrollToTopBtn {
   position: fixed;
   bottom: 30px;
@@ -134,7 +132,7 @@ nav a:hover {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* grid styles for the Home page */
+/* Home page grid styles */
 
 .home-page .mosaic {
   display: grid;
@@ -143,9 +141,7 @@ nav a:hover {
   gap: 0.625rem;
   max-width: 75rem;
   background-color: #f0f0f0;
-  /* background-color: #cfd6cf; */
 }
-
 .item {
   padding: 0.625rem;
   border-radius: 0.313rem;
@@ -183,10 +179,9 @@ nav a:hover {
 /* styles for the About page */
 
 .about-page {
-  /* background-color: #cfd6cf; */
   background-color: #f0f0f0;
   background-image: url("../images/yellow-umbrella4.jpeg");
-  background-size: 93%;
+  background-size: 100%;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -197,7 +192,8 @@ nav a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   max-width: 75rem;
-  margin-left: 3.75rem;
+  margin: 0 auto;
+  /* margin-left: 3.75rem; */
   padding-bottom: 9.375rem;
 }
 .about-page header {
@@ -230,20 +226,18 @@ nav a:hover {
   object-fit: contain;
   align-self: center;
 }
-.about-page .item.vertical {
-  align-self: center;
-}
 .about-page .item:hover {
   transform: scale(1.01);
   box-shadow: 0 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 .text-box-1 {
-  align-self: start;
   grid-column: 1 / span 2;
+  grid-row: auto;
   margin-bottom: 1.5rem;
   position: relative;
   padding: 1.5rem 1.5rem;
   background: white;
+  position: relative;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -252,10 +246,10 @@ nav a:hover {
 }
 .text-box-1 img.about-me-photo {
   position: absolute;
-  top: 1.75rem;
-  right: 1rem;
-  width: 175px;
-  height: 175px;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -263,12 +257,11 @@ nav a:hover {
 }
 .text-box-2 {
   grid-column: 1 / span 2;
-  grid-row: 2;
   margin-bottom: 1rem;
 }
 .text-box-3 {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: auto;
   margin: 1rem 0;
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.7);
@@ -276,25 +269,19 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
-.signature {
-  font-family: "Allison", cursive;
-  font-size: 2.5rem;
-  margin-top: -0.625rem;
-  text-align: right;
-  line-height: 1;
-}
+
 .umbrella1 {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: auto;
   max-width: 90%;
   margin: auto;
   border-radius: 0.5;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  align-self: center;
+  /* align-self: center; */
 }
 .call-to-action {
   grid-column: 1 / span 2;
-  grid-row: 4;
+  grid-row: auto;
   margin-right: 12%;
   margin-left: -3.125rem;
   margin-bottom: 2.5rem;
@@ -321,33 +308,111 @@ nav a:hover {
   box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
     0 0 0 -0.6em rgba(90, 154, 106, 0.7);
 }
-.call-to-action button:hover {
+/* .call-to-action button:hover {
   background-color: #004db7;
   box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7);
-  opacity: 0.85; /* Slight transparency on hover */
+  opacity: 0.85;
 }
 .call-to-action button:focus-visible {
   box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7);
 }
 .call-to-action button:focus {
   outline: none;
+} */
+
+/* Services page styles */
+
+.services-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: left;
+  align-self: start;
+  height: 50vh;
+  width: 100vw;
+  background-color: #333;
+  color: white;
+  margin: 0;
+  padding: 1.5rem;
+  position: relative;
+  /* border: 3px solid red; */
+
+}
+
+h2 {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "libre Caslon Display", serif;
+  margin: 0;
+}
+p {
+  grid-column: span 2;
+  align-self: start;
+}
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-family: "libre Caslon Display", serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.quote-section {
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/ligia-claudiu-wedding-compact-mirror.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* border: 3px solid blue; */
+}
+.quote {
+  all: unset; /* Resets inherited styles */
+  display: block;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: black;
+  text-align: center;
+}
+.signature {
+  position: absolute;
+  bottom: 30%;
+  right: 15%;
+  font-family: "Allison", cursive;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: black;
 }
 
 /* Contact page styles */
 
-/* .contact-page .page-header {
-  background-image: url("../images/amber-jeff-wedding-bands.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  background-repeat: no-repeat;
-  color: white;
-} */
-
-body.contact-page {
+.contact-page {
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  /* background-color: #cfd6cf; */
   background-color: #f0f0f0;
   background-image: url("../images/amber-jeff-wedding-bands.jpg");
   background-size: 93%;
@@ -356,8 +421,8 @@ body.contact-page {
   background-repeat: no-repeat;
 }
 .contact-page main {
-  margin-top: 3rem;
-  padding-top: 0;
+  margin-top: 6rem;
+  padding: 3rem;
 }
 .contact-page header {
   position: relative;
@@ -377,7 +442,7 @@ body.contact-page {
 }
 .contact-info a:hover {
   text-decoration: underline;
-  color:#4d855b;
+  color: #4d855b;
   font-weight: bold;
 }
 .contact-section {
@@ -399,6 +464,7 @@ body.contact-page {
   width: 60%;
   display: flex;
   flex-direction: column;
+  margin-top: -75px;
 }
 .contact-form fieldset label {
   cursor: pointer;
@@ -406,7 +472,6 @@ body.contact-page {
   /* display: inline-block; */
   /* display: block; */
   /* margin-bottom: 0.938rem ; */
-
 }
 .contact-form input[type="text"],
 .contact-form input[type="email"],
@@ -471,18 +536,9 @@ body.contact-page {
 .form-group input {
   width: 100%;
   font-size: 1rem;
-  /* font-weight: bold; */
   border: 0.063rem solid #ccc;
   border-radius: 0.313rem;
 }
-/* .contact-form textarea {
-  padding: 1.5rem 0.5rem 0.5rem; /* Add extra top padding for the label */
-  font-size: 1rem; /* Match the inputs */
-  line-height: 1.5; /* Consistent spacing */
-  width: 100%; /* Ensure it stretches the full width */
-  min-height: 6rem; /* Give a reasonable height for multiline input */
-} */
-
 .contact-form textarea {
   width: 100%; /* Full width of the container */
   padding: 0.5rem; /* Consistent padding around text */
@@ -501,8 +557,6 @@ body.contact-page {
   font-size: 1rem; /* Label font size */
   color: #666; /* Neutral color for the label */
 }
-
-
 
 .contact-form button.submit-button {
   width: 100%;
@@ -600,6 +654,12 @@ footer a:hover {
     text-align: center;
     padding: 1rem;
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    #services-section {
+      grid-template-columns: 1fr; /* Stacks on smaller screens */
+    }
   }
 
   /* media-queries for contact page */
