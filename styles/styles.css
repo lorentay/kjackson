@@ -180,7 +180,8 @@ nav a:hover {
 
 .about-page {
   background-color: #f0f0f0;
-  background-image: url("../images/yellow-umbrella4.jpeg");
+  /* background-image: url("../images/yellow-umbrella4.jpeg"); */
+  background-image: url(../images/wedding-dress-and-shoes.jpeg);
   background-size: 100%;
   background-position: center;
   background-attachment: fixed;
@@ -270,14 +271,13 @@ nav a:hover {
   text-align: left;
 }
 
-.umbrella1 {
+/* .umbrella1 {
   grid-column: 1;
   grid-row: auto;
   max-width: 90%;
   margin: auto;
   border-radius: 0.5;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  /* align-self: center; */
 }
 .call-to-action {
   grid-column: 1 / span 2;
@@ -307,7 +307,7 @@ nav a:hover {
   transition: background-color 0.3s, box-shadow 0.3s, opacity 0.3s;
   box-shadow: 0 0 0 -0.4em hsl(0, 0%, 100%),
     0 0 0 -0.6em rgba(90, 154, 106, 0.7);
-}
+} */
 /* .call-to-action button:hover {
   background-color: #004db7;
   box-shadow: 0 0 0 0.3em hsl(0, 0%, 100%), 0 0 0 0.5em rgba(90, 154, 106, 0.7);
@@ -335,6 +335,9 @@ nav a:hover {
   margin: 0;
   padding: 1.5rem;
   position: relative;
+  background: rgba(0, 0, 0, 0.5);
+
+
   /* border: 3px solid red; */
 
 }
@@ -377,7 +380,7 @@ li::before {
 .quote-section {
   height: 50vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/ligia-claudiu-wedding-compact-mirror.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/ligia-claudiu-wedding-compact-mirror.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -387,8 +390,10 @@ li::before {
   text-align: center;
   margin: 0;
   padding: 0;
+  filter: grayscale(70%);
   /* border: 3px solid blue; */
 }
+
 .quote {
   all: unset; /* Resets inherited styles */
   display: block;
@@ -406,6 +411,12 @@ li::before {
   line-height: 1;
   color: black;
 }
+
+.spacer {
+  height: 50vh; /* Creates the equivalent of 50% of the viewport height */
+  background: none; /* Ensure it's transparent to show the fixed image */
+}
+
 
 /* Contact page styles */
 
