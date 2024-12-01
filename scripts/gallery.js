@@ -60,11 +60,6 @@ const photos = [
     alt: "A blonde bride",
     orientation: "vertical",
   },
-  // {
-  //   src: "images/amberjeff-engagement-close.jpeg",
-  //   alt: "",
-  //   orientation: "horizontal",
-  // },
   {
     src: "images/amberjeff-engagement-train-station.jpeg",
     alt: "",
