@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testing-rgba</title>
+  </head>
+
+  <style>
+    body {
+      margin: 0;
+      background: url("images/yellow-umbrella-letting-go.jpeg") no-repeat center
+        center fixed;
+      background-size: cover;
+    }
+
+    .about-creative-section {
+      background: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+      color: white;
+      padding: 50px;
+      text-align: center;
+      z-index: 1; /* Ensures it's above the background but not conflicting */
+      position: relative; /* Create a new stacking context */
+    }
+  </style>
+  <body class="about-page">
+    <main>
+      <div class="about-creative-section">
+        <p>
+          This section should be transparent and show the background image
+          through it.
+        </p>
+        <img
+          src="images/yellow-umbrella-dancing.jpeg"
+          alt="A girl dressed in a royal blue lacy dress dancing on a hill while holding a yellow umbrella. Her face is obscured."
+          class="yellow-umbrella-dancing"
+        />
+        <p class="creative-text">
+          The playfulness and creativity that clients bring to a photoshoot are
+          what I love most. It’s a collaboration, an artistic partnership, where
+          we create together, capturing not just a pose but an experience, a
+          feeling.
+        </p>
+        <img
+          src="images/yellow-umbrella-holding-on.jpeg"
+          alt="A girl dressed in a royal blue lacy dress holding onto a yellow umbrella that has been turned inside out by the wind."
+          class="yellow-umbrella-holding-on"
+        />
+        <img
+          src="images/yellow-umbrella-letting-go.jpeg"
+          alt="Girl dressed in
+            blue lets go of the yellow umbrella and watches as the wind sails it
+            into the air."
+          class="yellow-umbrella-letting-go"
+        />
+      </div>
+      `
+    </main>
+  </body>
+</html>
